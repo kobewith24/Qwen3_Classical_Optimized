@@ -59,16 +59,63 @@ reports/gguf-artifacts.json  已测 GGUF 的大小、格式与 SHA-256
 
 仓库不分发基座、adapter、GGUF、原始语料、运行数据库、访问令牌、下载工具和缓存。克隆后需要另外准备这些资产，不能直接启动已有模型。
 
-## 环境与资产准备
+## 先选择 PowerShell 7
+
+项目的 `.ps1` 脚本使用 **PowerShell 7**。Windows 自带的 `powershell.exe` 通常运行 Windows PowerShell 5.1；打开 Windows Terminal 并不代表已经切换到 PowerShell 7。可先检查当前窗口：
+
+```powershell
+$PSVersionTable.PSVersion
+```
+
+如果本机已有模型和 Python 环境，选择下面一种方式设置 `$pwsh` 后，直接跳到[启动研读工具](#启动研读工具)，不必重新准备环境或训练。
+
+**方式一：已经安装 PowerShell 7，且能找到 `pwsh.exe`。**
+
+```powershell
+$pwsh = (Get-Command pwsh.exe -CommandType Application -ErrorAction Stop).Source
+```
+
+**方式二：当前只有 Windows PowerShell 5.1，但安装了带本地运行时的 Codex 桌面版。** 在当前窗口执行下面这段，自动读取已安装运行时的位置，不写死随更新变化的安装路径：
+
+```powershell
+$runtime = Get-AppxPackage -Name 'OpenAI.CodexPrimaryRuntime*' |
+    Sort-Object Version -Descending |
+    Select-Object -First 1
+if (-not $runtime) {
+    throw '未找到 Codex 本地运行时，请按下方说明单独安装 PowerShell 7。'
+}
+$pwsh = Join-Path $runtime.InstallLocation 'dependencies\native\powershell\pwsh.exe'
+if (-not (Test-Path -LiteralPath $pwsh)) {
+    throw '当前 Codex 运行时没有这个 PowerShell 入口，请单独安装 PowerShell 7。'
+}
+```
+
+两种方式都用下面的命令确认目标解释器版本，输出应为 `7.x`。后续示例通过 `& $pwsh -NoProfile -File ...` 显式调用它，因此也可以从当前的 5.1 窗口启动项目：
+
+```powershell
+& $pwsh -NoProfile -Command '$PSVersionTable.PSVersion.ToString()'
+```
+
+如果两种方式都不可用，可按[微软官方安装说明](https://learn.microsoft.com/en-us/powershell/scripting/install/install-powershell-on-windows)安装独立 PowerShell 7，例如在提供 WinGet 的系统上执行以下命令；安装后重新打开终端，再使用方式一。本项目的运行不要求安装 Codex。
+
+```powershell
+winget install --id Microsoft.PowerShell --source winget
+```
+
+`$pwsh` 只在当前窗口中保留，换窗口后需重新选择。脚本采用 UTF-8 编码，5.1 可能误读其中的中文并报“意外的标记”等解析错误，见[微软编码说明](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_character_encoding)。遇到这种情况先确认目标解释器，而不是重新下载模型。
+
+## 首次环境与资产准备
 
 已验证 Windows、PowerShell 7、Python 3.12 和 NVIDIA CUDA 单卡。依赖的实测固定版本在 [requirements.txt](requirements.txt)，CUDA 版 PyTorch 应匹配本机驱动。先创建独立环境，按自己的 CUDA 条件安装 PyTorch，再安装其余依赖；不要覆盖已有共享环境。
 
+以下环境、安装与训练命令均在仓库根目录执行。当前电脑的路径如下，其他机器请换成实际克隆位置：
+
 ```powershell
+Set-Location 'D:\Projects\Qwen3_Classical_Optimized'
 python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install -r requirements.txt
-# 启停和包装脚本通过该变量选择解释器
-$env:CLASSICAL_PYTHON = (Get-Command python).Source
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+# 仅在新环境中显式选择这个 Python
+$env:CLASSICAL_PYTHON = (Resolve-Path '.\.venv\Scripts\python.exe').Path
 ```
 
 解释器优先读取 `CLASSICAL_PYTHON`，其次读取仅本机保留的 `data/python.path`、项目 `.venv`，最后使用 PATH 中的 Python。该本机路径文件不会上传。
@@ -90,23 +137,50 @@ $env:CLASSICAL_PYTHON = (Get-Command python).Source
 默认 CUDA 工具可通过以下脚本安装到项目目录；脚本固定下载包并核对 SHA-256，不改系统 CUDA。复现 GGUF 导出还需要匹配的 `convert_hf_to_gguf.py`、`gguf-py`、`conversion` 和 `llama-quantize.exe`，路径见 `scripts/Export-GGUF.ps1`，仓库不内嵌上游工具源码。
 
 ```powershell
-.\scripts\Install-NativeCuda.ps1
+& $pwsh -NoProfile -File .\scripts\Install-NativeCuda.ps1
 ```
 
 模型、语料和第三方工具沿用各自的许可和使用条件，本仓库不对这些上游资产重新授权。
 
 ## 启动研读工具
 
-资产准备完成、训练和其他占用显存的服务结束后运行：
+本机已有资产时从这里开始。先完成上方的 PowerShell 选择，在同一窗口进入项目目录；其他机器请换成自己的仓库路径：
 
 ```powershell
-$env:CLASSICAL_PYTHON = (Get-Command python).Source
-.\scripts\Start-Reader.ps1 -OpenBrowser
-# 使用结束后停止本项目托管的进程
-.\scripts\Stop-Reader.ps1
+Set-Location 'D:\Projects\Qwen3_Classical_Optimized'
 ```
 
-页面位于 `http://127.0.0.1:8010`，首次启动的令牌在本机 `data/access.token`，填入连接窗口即可。默认脚本管理独立原生服务 `127.0.0.1:11436`，不使用默认 Ollama 端口。遇到端口占用会拒绝启动，不停止未知进程。
+已有环境通过 `data/python.path` 配置时，启动前无需重设 `CLASSICAL_PYTHON`。只有需要更换 Python 环境时才设置该变量，它的优先级最高。确认训练和其他占用显存的服务结束后，启动研读工具：
+
+```powershell
+& $pwsh -NoProfile -File .\scripts\Start-Reader.ps1 -OpenBrowser
+```
+
+等终端出现“研读工具已就绪”，浏览器会自动打开；也可以手动访问 [本地研读页面](http://127.0.0.1:8010)。若页面要求访问令牌，在同一窗口读取并复制到页面连接框：
+
+```powershell
+Get-Content -LiteralPath .\data\access.token -Encoding UTF8
+```
+
+令牌仅在本机使用。需要确认服务状态时可执行：
+
+```powershell
+Invoke-RestMethod 'http://127.0.0.1:8010/health'
+```
+
+默认脚本管理独立原生服务 `127.0.0.1:11436`，不使用默认 Ollama 端口。遇到端口占用会拒绝启动，不停止未知进程。
+
+### 使用结束后停止服务
+
+关闭页面后，模型服务仍可能占用显存。使用结束后在同一窗口单独执行停止命令：
+
+```powershell
+& $pwsh -NoProfile -File .\scripts\Stop-Reader.ps1
+```
+
+如果上次启动被中断，且再次启动提示已有本项目的进程记录，先执行上述停止命令清理并停止本项目记录的进程，再重新启动。换终端窗口后先重新设置 `$pwsh`。
+
+### 阅读与模型选项
 
 每次最多处理 3000 字符。结果保存在 `data/reader.sqlite`，页面“最近文档”可以恢复；只有完整结束或人工确认的段才算完成。部分处理时导出保留尚未处理的原文。整篇默认预算 300 秒，可用 `-TaskTimeoutSeconds` 调整。
 
@@ -120,13 +194,13 @@ $env:CLASSICAL_PYTHON = (Get-Command python).Source
 
 ```powershell
 # 首先准备数据；不覆盖已冻结目录
-.\scripts\Run-Python.ps1 -PythonArgs @('-m','classical.prepare')
+& $pwsh -NoProfile -File .\scripts\Run-Python.ps1 -m classical.prepare
 # 训练前只验证冻结文件与标签，不加载 GPU
-.\scripts\Run-Python.ps1 -PythonArgs @('-m','classical.train','--name','reading_seed24','--validate-only')
+& $pwsh -NoProfile -File .\scripts\Run-Python.ps1 -m classical.train --name reading_seed24 --validate-only
 # 真正训练使用唯一实验名
-.\scripts\Run-Python.ps1 -PythonArgs @('-m','classical.train','--name','reading_seed24','--seed','24')
+& $pwsh -NoProfile -File .\scripts\Run-Python.ps1 -m classical.train --name reading_seed24 --seed 24
 # 程序检查：部分数据/权重检查需准备对应本地资产
-.\scripts\Run-Python.ps1 -PythonArgs @('-m','unittest','discover','-s','tests','-v')
+& $pwsh -NoProfile -File .\scripts\Run-Python.ps1 -m unittest discover -s tests -v
 ```
 
 领域评分、同 checkpoint 量化比较和真实服务检查分别由 `classical.evaluate`、`classical.quant_evaluate`、`scripts/evaluate_native.py`、`scripts/validate_native_contract.py`、`scripts/validate_native_documents.py` 实现。现有报告的题目已使用，不能在下一次选方案时仍当作未见测试。
