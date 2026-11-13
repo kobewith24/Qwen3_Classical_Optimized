@@ -67,40 +67,22 @@ reports/gguf-artifacts.json  已测 GGUF 的大小、格式与 SHA-256
 $PSVersionTable.PSVersion
 ```
 
-如果本机已有模型和 Python 环境，选择下面一种方式设置 `$pwsh` 后，直接跳到[启动研读工具](#启动研读工具)，不必重新准备环境或训练。
+如果当前只有 Windows PowerShell 5.1，可按[微软官方安装说明](https://learn.microsoft.com/en-us/powershell/scripting/install/install-powershell-on-windows)安装 PowerShell 7。提供 WinGet 的 Windows 电脑可以在当前窗口执行以下命令，选择 MSI 安装方式；没有 WinGet 时可从官方页面下载安装包：
 
-**方式一：已经安装 PowerShell 7，且能找到 `pwsh.exe`。**
+```powershell
+winget install --id Microsoft.PowerShell --source winget --installer-type wix
+```
+
+安装完成后，关闭并重新打开终端，运行 `pwsh` 或从开始菜单打开“PowerShell 7”，再检查 `$PSVersionTable.PSVersion`，应显示 `7.x`。PowerShell 7 与 Windows PowerShell 5.1 并列安装，打开旧的“Windows PowerShell”入口仍然会进入 5.1。
+
+确认 `pwsh.exe` 可用后，在当前窗口选择目标解释器并核对版本：
 
 ```powershell
 $pwsh = (Get-Command pwsh.exe -CommandType Application -ErrorAction Stop).Source
-```
-
-**方式二：当前只有 Windows PowerShell 5.1，但安装了带本地运行时的 Codex 桌面版。** 在当前窗口执行下面这段，自动读取已安装运行时的位置，不写死随更新变化的安装路径：
-
-```powershell
-$runtime = Get-AppxPackage -Name 'OpenAI.CodexPrimaryRuntime*' |
-    Sort-Object Version -Descending |
-    Select-Object -First 1
-if (-not $runtime) {
-    throw '未找到 Codex 本地运行时，请按下方说明单独安装 PowerShell 7。'
-}
-$pwsh = Join-Path $runtime.InstallLocation 'dependencies\native\powershell\pwsh.exe'
-if (-not (Test-Path -LiteralPath $pwsh)) {
-    throw '当前 Codex 运行时没有这个 PowerShell 入口，请单独安装 PowerShell 7。'
-}
-```
-
-两种方式都用下面的命令确认目标解释器版本，输出应为 `7.x`。后续示例通过 `& $pwsh -NoProfile -File ...` 显式调用它，因此也可以从当前的 5.1 窗口启动项目：
-
-```powershell
 & $pwsh -NoProfile -Command '$PSVersionTable.PSVersion.ToString()'
 ```
 
-如果两种方式都不可用，可按[微软官方安装说明](https://learn.microsoft.com/en-us/powershell/scripting/install/install-powershell-on-windows)安装独立 PowerShell 7，例如在提供 WinGet 的系统上执行以下命令；安装后重新打开终端，再使用方式一。本项目的运行不要求安装 Codex。
-
-```powershell
-winget install --id Microsoft.PowerShell --source winget
-```
+后续示例通过 `& $pwsh -NoProfile -File ...` 显式调用 PowerShell 7。如果本机已有模型和 Python 环境，设置好 `$pwsh` 后直接跳到[启动研读工具](#启动研读工具)，不必重新准备环境或训练。
 
 `$pwsh` 只在当前窗口中保留，换窗口后需重新选择。脚本采用 UTF-8 编码，5.1 可能误读其中的中文并报“意外的标记”等解析错误，见[微软编码说明](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_character_encoding)。遇到这种情况先确认目标解释器，而不是重新下载模型。
 
