@@ -1,0 +1,59 @@
+{
+  "time": "2026-11-13T05:16:40.829843+00:00",
+  "model": "clean_2k_seed24",
+  "health": {
+    "status": "ready",
+    "model": "clean_2k_seed24",
+    "scope": "local single-worker inference",
+    "backend": "llama.cpp clean-q8_0; reader punctuation constrained",
+    "reader_task_timeout_seconds": 0.2
+  },
+  "checks": [
+    {
+      "name": "real whole-document deadline returns explicit 504",
+      "passed": true,
+      "detail": {
+        "status": 504,
+        "response_seconds": 0.2033956000013859,
+        "budget_seconds": 0.2
+      }
+    },
+    {
+      "name": "real timed-out worker stops and releases capacity",
+      "passed": true,
+      "detail": {
+        "seconds_to_idle": 0.5190096000005724,
+        "metrics": {
+          "completed": 0,
+          "failed": 0,
+          "cancelled": 1,
+          "output_tokens": 0,
+          "cancel_requests": 0,
+          "reader_timeouts": 1,
+          "reader_cache_hits": 0,
+          "active": 0,
+          "queued": 0,
+          "queue_capacity": 4,
+          "reader_jobs": 0
+        }
+      }
+    },
+    {
+      "name": "timed-out progress removed",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "mode": "deadline-only",
+  "native_identity": {
+    "variant": "clean-q8_0",
+    "model_sha256": "ead9ab7d90dbcc16c94114f684b2c5c2332f2208300304719c0a39fddfa692d7",
+    "binary_sha256": "04672f0e3d4b919a7304c4cca40ec99fd943d0503611e0ef25d1f3d57be3da26"
+  },
+  "adapter_sha256": "483e4b049c04be3d826fe9cc3653e5c2b0f6bf7c582634f1efb8b00bbc76b87f",
+  "code_sha256": {
+    "api/server.py": "c7d9cc2d59f9297490bf41a4b986cc460feec89210d34a5cdc50559a8adae5fe",
+    "classical/inference.py": "1947ed5fedf3df5bc692b1225c1845071c3f404d9bb1237c34f7b69fc8e41ea6",
+    "scripts/validate_live_api.py": "5f905659898a1312f1517c95207516e9b1de69fdfa6924d69f2d3bfdbc8b347f"
+  }
+}

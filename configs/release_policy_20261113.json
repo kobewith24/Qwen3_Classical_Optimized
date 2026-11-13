@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-13",
+  "candidate": "reviewed_v3_seed24_bf16io",
+  "current": "clean_2k_seed24",
+  "declared_before_reviewed_final_model_outputs": true,
+  "domain_tag": "reviewed-final-20261113",
+  "domain_min_n_per_group": 15,
+  "domain_max_score_drop_per_group": 0.03,
+  "punctuation_max_body_preservation_drop_per_group": 0.05,
+  "ceval_tag": "ceval-val-20261113",
+  "ceval_max_accuracy_drop_vs_current": 0.03,
+  "ceval_max_accuracy_drop_vs_base": 0.05,
+  "ceval_paired_ci_lower_bound_vs_base_min": -0.08,
+  "real_api_checks_required": true,
+  "scope": "Pragmatic local experimental release criteria, not a powered statistical noninferiority test or expert semantic certification. Keep current default if a gate fails."
+}

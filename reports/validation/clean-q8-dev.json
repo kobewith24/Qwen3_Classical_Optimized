@@ -1,0 +1,50 @@
+{
+  "model": "clean_2k_seed24",
+  "fingerprints": {
+    "free": "086a019662658187818a8e0a43a1d9bd2cd2c3bbb8a4f237e9c97a44867a6091",
+    "constrained": "5414d57fcd6405d934692181bfe2669587132d838801a9519b1fbdee43907b58"
+  },
+  "models": {
+    "free": {
+      "n": 32,
+      "successful": 32,
+      "errors": 0,
+      "score": 0.8295473173919174,
+      "body_preservation_rate": 0.90625,
+      "mean_body_character_error_rate": 0.0005801372010567626,
+      "boundary_f1": 0.8800532984016297,
+      "typed_f1": 0.7139605372705984,
+      "length_truncated": 0,
+      "all_sample_strict_f1": 0.8295473173919174,
+      "completed_rate": 1.0,
+      "all_sample_body_preservation": 0.90625
+    },
+    "constrained": {
+      "n": 32,
+      "successful": 32,
+      "errors": 0,
+      "score": 0.9176849803981147,
+      "body_preservation_rate": 1.0,
+      "mean_body_character_error_rate": 0.0,
+      "boundary_f1": 0.9176849803981147,
+      "typed_f1": 0.7851714670376341,
+      "length_truncated": 0,
+      "all_sample_strict_f1": 0.9176849803981147,
+      "completed_rate": 1.0,
+      "all_sample_body_preservation": 1.0
+    }
+  },
+  "complete": true,
+  "development_gate_passed": true,
+  "paired_strict_f1": {
+    "n": 32,
+    "mean_delta": 0.08813766300619738,
+    "bootstrap_95_ci": [
+      0.003193701943478497,
+      0.17734321933991742
+    ],
+    "unit": "sample within this frozen set; does not measure seed-to-seed training variance"
+  },
+  "protocol_sha256": "0ec4e3859209a5b5fb43ec30b71ec64ce77ccb9c8e6a53cd301359eb0cfa8d0c",
+  "warning": "Development-set diagnostic. Structural body invariance is a decoding contract, not learned semantic accuracy or an unseen-test claim."
+}

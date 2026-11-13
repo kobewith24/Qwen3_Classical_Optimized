@@ -1,0 +1,61 @@
+{
+  "method": "isolated headless Edge via existing Playwright; actual DOM controls, actual authenticated gateway, SQLite and native GPU; no mocks",
+  "desktop_tool_note": "CUA and node_repl initialization failed with kernel-assets path error; no desktop-UI success claimed",
+  "passed": true,
+  "checks": [
+    {
+      "name": "real page connects to default model",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "UI rejects edited body",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "UI saves corrected punctuation to server",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "source and manual revision survive page refresh",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "history restores source task and manual result",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "cancel shows saved partial results and keeps source",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "partial document is restored after refresh",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "UI resumes remaining work and enables export",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "previous manual correction remains intact after another document",
+      "passed": true,
+      "observed": null
+    }
+  ],
+  "error": null,
+  "screenshot": "reader-resume.png",
+  "code_sha256": {
+    "api/server.py": "c7d9cc2d59f9297490bf41a4b986cc460feec89210d34a5cdc50559a8adae5fe",
+    "api/static/app.js": "166b992000239ad865de5803a93ba65a547a921e1e88ba89239a51844e32d991",
+    "api/static/index.html": "b786e2c2190582e4f3ee71628340daff82b95645090d68bdcb6971387504c982",
+    "api/static/app.css": "5eaa3a11f7318754831363780eaa392ab175a4eb4c5ac1cb60d17980e6db2d35",
+    "scripts/validate_browser.py": "19408736d7031d1709acd96844ae6d0293c5f865f8c4d2e452d108437ca30d12"
+  }
+}

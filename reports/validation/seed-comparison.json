@@ -1,0 +1,103 @@
+{
+  "groups": {
+    "bench/punctuate": {
+      "n_per_seed": 40,
+      "scores": {
+        "clean_2k_seed24": 0.7001657839357798,
+        "clean_2k_seed42": 0.7203957679943123
+      },
+      "two_seed_mean": 0.710280775965046,
+      "observed_seed_range": 0.02022998405853249,
+      "paired_seed42_minus_seed24": {
+        "n": 40,
+        "mean_delta": 0.02022998405853237,
+        "bootstrap_95_ci": [
+          -0.06563596864173506,
+          0.11273222694411393
+        ],
+        "unit": "sample within this frozen set; does not measure seed-to-seed training variance"
+      }
+    },
+    "bench/translate": {
+      "n_per_seed": 40,
+      "scores": {
+        "clean_2k_seed24": 0.2261591867829132,
+        "clean_2k_seed42": 0.23722528397680964
+      },
+      "two_seed_mean": 0.23169223537986142,
+      "observed_seed_range": 0.011066097193896451,
+      "paired_seed42_minus_seed24": {
+        "n": 40,
+        "mean_delta": 0.011066097193896465,
+        "bootstrap_95_ci": [
+          -0.0028752367182601404,
+          0.02746514821095125
+        ],
+        "unit": "sample within this frozen set; does not measure seed-to-seed training variance"
+      }
+    },
+    "ood/punctuate": {
+      "n_per_seed": 40,
+      "scores": {
+        "clean_2k_seed24": 0.6429037105585064,
+        "clean_2k_seed42": 0.6368544006905327
+      },
+      "two_seed_mean": 0.6398790556245195,
+      "observed_seed_range": 0.006049309867973696,
+      "paired_seed42_minus_seed24": {
+        "n": 40,
+        "mean_delta": -0.00604930986797365,
+        "bootstrap_95_ci": [
+          -0.1127102955864546,
+          0.10169569248463602
+        ],
+        "unit": "sample within this frozen set; does not measure seed-to-seed training variance"
+      }
+    },
+    "ood/translate_c2m": {
+      "n_per_seed": 40,
+      "scores": {
+        "clean_2k_seed24": 0.31999563880006454,
+        "clean_2k_seed42": 0.3089653183051688
+      },
+      "two_seed_mean": 0.3144804785526167,
+      "observed_seed_range": 0.011030320494895718,
+      "paired_seed42_minus_seed24": {
+        "n": 40,
+        "mean_delta": -0.011030320494895671,
+        "bootstrap_95_ci": [
+          -0.03253699794415732,
+          0.011381568733656075
+        ],
+        "unit": "sample within this frozen set; does not measure seed-to-seed training variance"
+      }
+    },
+    "ood/translate_m2c": {
+      "n_per_seed": 40,
+      "scores": {
+        "clean_2k_seed24": 0.32030864792914343,
+        "clean_2k_seed42": 0.3209767314991139
+      },
+      "two_seed_mean": 0.3206426897141287,
+      "observed_seed_range": 0.0006680835699704457,
+      "paired_seed42_minus_seed24": {
+        "n": 40,
+        "mean_delta": 0.0006680835699704096,
+        "bootstrap_95_ci": [
+          -0.018765997750569387,
+          0.019424836500354224
+        ],
+        "unit": "sample within this frozen set; does not measure seed-to-seed training variance"
+      }
+    }
+  },
+  "same_recipe_except_seed": true,
+  "adapter_hashes": {
+    "clean_2k_seed24": "483e4b049c04be3d826fe9cc3653e5c2b0f6bf7c582634f1efb8b00bbc76b87f",
+    "clean_2k_seed42": "5dc3447ff3d469febd156e182f9d2aae77d96d15737bb0f10182ab00c0e72e62"
+  },
+  "selection_sha256": "456fa2c6fb6d4204cd9d97ec4402bc1437c70b6fb2cd6c7fe637867ca053c91c",
+  "default_model": "clean_2k_seed24",
+  "default_policy": "Chosen before this repeat; not switched using primary test scores",
+  "limitation": "Two seeds only; descriptive range is not a reliable population variance or proof of saturation."
+}

@@ -1,0 +1,62 @@
+{
+  "ids": [
+    "58993ab2c25603e3e3b2e43e",
+    "65995e80c6284ffc76fcbf21",
+    "fcf1ca1ca4ad13db49613ea5",
+    "1e6b403528aa9da25a76ecd6",
+    "535c105f6a8ad8a5bea15492",
+    "9ec68b7eeb0c106dc2925775",
+    "659e1af0eb07600c1a64f61d",
+    "be541b2553de7022f3f3b6dc",
+    "f334ede2325528b37226fa19",
+    "f05bf98411a1faa22cfdee78",
+    "83b76188619aa7c55b5ad9f4",
+    "473b3d8fb801710965d0f551",
+    "f22675718125f698f773ec65",
+    "f5b4c111b3b3c3526c17b794",
+    "123da22bee647be53e7572d4",
+    "b09242f41ca9bbc8d47ab243",
+    "6225243a7b577b0554d04b11",
+    "bb95c0f89cfefcb74cbbd6fb",
+    "3e2ae5ed5d6e6580dc1c0206",
+    "41e060ff267a8cc8f8c8a02c",
+    "82bb0483eac4e0e36212c0d7",
+    "fd2a1be5100f1fb9112aa1f5",
+    "e909793a328deb063e0a0fdc",
+    "a0e79183e59e5867fb534143",
+    "789e6f0b1574b7d034697e49",
+    "f1eeed569b6dd2152d07a561",
+    "4f7b327de8425bf4675ab991",
+    "9c14711b9fb8cf62c8258ada",
+    "15f425487af1e2e91518ac98",
+    "2496f442795ed7aeaaa15fe5",
+    "977f866042431474971df007",
+    "e71fb079cd962439cc44b586"
+  ],
+  "data_sha256": "ad026cebd092d28bca66109e0546ce0f02ab647cf70b13e5a1e217a6dc1814a8",
+  "role": "development diagnostic, not unseen test",
+  "predeclared_gate": {
+    "strict_f1_delta_min": -0.01,
+    "constrained_completion_rate_min": 0.98,
+    "constrained_body_preservation_min": 0.98
+  },
+  "generation": {
+    "greedy": true,
+    "seed": 24,
+    "cache_prompt": false,
+    "max_new_tokens": 512
+  },
+  "source_sha256": {
+    "classical/native.py": "116dc592ce2d6dd0e9eae137109a7fd3f62aa5b7da7cbdaa79a4d82391a9d606",
+    "classical/constraints.py": "4f9c97877bd58caed1fb357d82fb0828d0e9ff9428afccea61881ca1dcc7a568",
+    "classical/core.py": "fb50c3977d00d0845f0e9684e878e04060b7b9c65693ef27f8cfacc5b0d0d5e2"
+  },
+  "fewshot": {
+    "ids": [
+      "7bdc3b0418682b6b22d56c27",
+      "deae2148d176671c6e6b372c"
+    ],
+    "training_sha256": "65a1598d8eb656280489d2de3157e0cc574562b4191c85849d497adbf4168c72",
+    "instruction": "给下列古文添加标点，只输出断句后的原文，不得改动、增删或调换任何原字：\n以下示例只演示格式；保持原字及顺序，仅插入标点。\n示例原文：倾汉室者王族丧周祚者杨氏何灭亡之祸合若符契焉斯魏文所以发一概之诏也已\n示例断句：倾汉室者王族，丧周祚者杨氏。何灭亡之祸，合若符契焉。斯魏文所以发一概之诏也已。\n示例原文：苕之华芸其黄矣心之忧矣维其伤矣苕之华其叶青青知我如此不如无生牂羊坟首三星在罶人可以食鲜可以饱\n示例断句：苕之华，芸其黄矣。心之忧矣，维其伤矣！\n苕之华，其叶青青。知我如此，不如无生！\n牂羊坟首，三星在罶。人可以食，鲜可以饱！\n只处理下面的实际原文："
+  }
+}

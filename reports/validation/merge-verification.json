@@ -1,0 +1,26 @@
+{
+  "same_parameter_keys": true,
+  "parameter_tensors": 398,
+  "checks": [
+    {
+      "tensor": "model.layers.0.self_attn.q_proj.weight",
+      "passed": true,
+      "max_absolute_fp16_error": 0.0
+    },
+    {
+      "tensor": "model.layers.17.mlp.down_proj.weight",
+      "passed": true,
+      "max_absolute_fp16_error": 0.0
+    },
+    {
+      "tensor": "model.layers.35.self_attn.o_proj.weight",
+      "passed": true,
+      "max_absolute_fp16_error": 0.0
+    },
+    {
+      "tensor": "model.norm.weight",
+      "passed": true,
+      "max_absolute_fp16_error": 0.0
+    }
+  ]
+}

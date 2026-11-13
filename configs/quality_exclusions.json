@@ -1,0 +1,9 @@
+{
+  "reviewer": "assistant_text_review",
+  "scope": "Confirmed content conflicts from targeted training-data inspection; not a full corpus semantic audit or independent human review",
+  "excluded": [
+    {"id": "493ea327c0924e4d14674a53", "reason": "元史：现代文述其父忽都晚年征战，参考古文述弱冠外貌及隶属阿术，内容错位", "raw_id": "instruct#79746"},
+    {"id": "ed9bb1bf3355f77c3dc7bbfc", "reason": "元史：现代文述太祖攻居庸关，参考古文述四杰称号，内容错位", "raw_id": "instruct#73386"},
+    {"id": "23f55f632825cd838bf0ebc3", "reason": "论衡：现代文明确否定商羊起舞导致降雨，参考古文缺失相应否定，因果极性冲突", "raw_id": "instruct#1500622"}
+  ]
+}

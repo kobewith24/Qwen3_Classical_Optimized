@@ -1,0 +1,240 @@
+{
+  "models": {
+    "base": {
+      "bench/punctuate": {
+        "n": 40,
+        "successful": 40,
+        "errors": 0,
+        "score": 0.6186047433538848,
+        "body_preservation_rate": 0.725,
+        "mean_body_character_error_rate": 0.004161650435133961,
+        "boundary_f1": 0.7613229939713729,
+        "typed_f1": 0.47451572753417465,
+        "length_truncated": 0
+      },
+      "bench/translate": {
+        "n": 40,
+        "successful": 40,
+        "errors": 0,
+        "score": 0.21411503998992973,
+        "length_truncated": 0
+      },
+      "ood/punctuate": {
+        "n": 40,
+        "successful": 40,
+        "errors": 0,
+        "score": 0.38567161139307393,
+        "body_preservation_rate": 0.45,
+        "mean_body_character_error_rate": 0.005864337195424953,
+        "boundary_f1": 0.7283048824142263,
+        "typed_f1": 0.32165340817665555,
+        "length_truncated": 0
+      },
+      "ood/translate_c2m": {
+        "n": 40,
+        "successful": 40,
+        "errors": 0,
+        "score": 0.2910846272438844,
+        "length_truncated": 0
+      },
+      "ood/translate_m2c": {
+        "n": 40,
+        "successful": 40,
+        "errors": 0,
+        "score": 0.28157422679037103,
+        "length_truncated": 0
+      }
+    },
+    "clean_2k_seed24": {
+      "bench/punctuate": {
+        "n": 40,
+        "successful": 40,
+        "errors": 0,
+        "score": 0.7001657839357798,
+        "body_preservation_rate": 0.9,
+        "mean_body_character_error_rate": 0.0009742767499144386,
+        "boundary_f1": 0.7552329398873994,
+        "typed_f1": 0.5664887544526621,
+        "length_truncated": 0
+      },
+      "bench/translate": {
+        "n": 40,
+        "successful": 40,
+        "errors": 0,
+        "score": 0.2261591867829132,
+        "length_truncated": 0
+      },
+      "ood/punctuate": {
+        "n": 40,
+        "successful": 40,
+        "errors": 0,
+        "score": 0.6429037105585064,
+        "body_preservation_rate": 0.725,
+        "mean_body_character_error_rate": 0.0035497696085467377,
+        "boundary_f1": 0.7494162009819638,
+        "typed_f1": 0.5469883216788985,
+        "length_truncated": 0
+      },
+      "ood/translate_c2m": {
+        "n": 40,
+        "successful": 40,
+        "errors": 0,
+        "score": 0.31999563880006454,
+        "length_truncated": 0
+      },
+      "ood/translate_m2c": {
+        "n": 40,
+        "successful": 40,
+        "errors": 0,
+        "score": 0.32030864792914343,
+        "length_truncated": 0
+      }
+    },
+    "clean_2k_seed42": {
+      "bench/punctuate": {
+        "n": 40,
+        "successful": 40,
+        "errors": 0,
+        "score": 0.7203957679943123,
+        "body_preservation_rate": 0.9,
+        "mean_body_character_error_rate": 0.0009231058390722257,
+        "boundary_f1": 0.7770738573638629,
+        "typed_f1": 0.5729295652369915,
+        "length_truncated": 0
+      },
+      "bench/translate": {
+        "n": 40,
+        "successful": 40,
+        "errors": 0,
+        "score": 0.23722528397680964,
+        "length_truncated": 0
+      },
+      "ood/punctuate": {
+        "n": 40,
+        "successful": 40,
+        "errors": 0,
+        "score": 0.6368544006905327,
+        "body_preservation_rate": 0.725,
+        "mean_body_character_error_rate": 0.003097531962335161,
+        "boundary_f1": 0.7535528653422736,
+        "typed_f1": 0.5386833312339762,
+        "length_truncated": 0
+      },
+      "ood/translate_c2m": {
+        "n": 40,
+        "successful": 40,
+        "errors": 0,
+        "score": 0.3089653183051688,
+        "length_truncated": 0
+      },
+      "ood/translate_m2c": {
+        "n": 40,
+        "successful": 40,
+        "errors": 0,
+        "score": 0.3209767314991139,
+        "length_truncated": 0
+      }
+    }
+  },
+  "paired_vs_base": {
+    "clean_2k_seed24": {
+      "bench/punctuate": {
+        "n": 40,
+        "mean_delta": 0.08156104058189502,
+        "bootstrap_95_ci": [
+          -0.0679181915899643,
+          0.21832522198051368
+        ],
+        "unit": "sample within this frozen set; does not measure seed-to-seed training variance"
+      },
+      "bench/translate": {
+        "n": 40,
+        "mean_delta": 0.012044146792983459,
+        "bootstrap_95_ci": [
+          -0.011529594463413612,
+          0.035683536455075195
+        ],
+        "unit": "sample within this frozen set; does not measure seed-to-seed training variance"
+      },
+      "ood/punctuate": {
+        "n": 40,
+        "mean_delta": 0.25723209916543244,
+        "bootstrap_95_ci": [
+          0.07834764234971532,
+          0.4381607397190536
+        ],
+        "unit": "sample within this frozen set; does not measure seed-to-seed training variance"
+      },
+      "ood/translate_c2m": {
+        "n": 40,
+        "mean_delta": 0.02891101155618008,
+        "bootstrap_95_ci": [
+          -0.0009801465034842644,
+          0.06104800539892158
+        ],
+        "unit": "sample within this frozen set; does not measure seed-to-seed training variance"
+      },
+      "ood/translate_m2c": {
+        "n": 40,
+        "mean_delta": 0.03873442113877241,
+        "bootstrap_95_ci": [
+          0.0005356993945887379,
+          0.08032182579726407
+        ],
+        "unit": "sample within this frozen set; does not measure seed-to-seed training variance"
+      }
+    },
+    "clean_2k_seed42": {
+      "bench/punctuate": {
+        "n": 40,
+        "mean_delta": 0.1017910246404274,
+        "bootstrap_95_ci": [
+          -0.03064659628609595,
+          0.24372499689543453
+        ],
+        "unit": "sample within this frozen set; does not measure seed-to-seed training variance"
+      },
+      "bench/translate": {
+        "n": 40,
+        "mean_delta": 0.023110243986879924,
+        "bootstrap_95_ci": [
+          -0.005931362407471329,
+          0.053440319061393314
+        ],
+        "unit": "sample within this frozen set; does not measure seed-to-seed training variance"
+      },
+      "ood/punctuate": {
+        "n": 40,
+        "mean_delta": 0.2511827892974588,
+        "bootstrap_95_ci": [
+          0.10210435771099897,
+          0.4137702248396281
+        ],
+        "unit": "sample within this frozen set; does not measure seed-to-seed training variance"
+      },
+      "ood/translate_c2m": {
+        "n": 40,
+        "mean_delta": 0.017880691061284416,
+        "bootstrap_95_ci": [
+          -0.011998609321577373,
+          0.047434060589030824
+        ],
+        "unit": "sample within this frozen set; does not measure seed-to-seed training variance"
+      },
+      "ood/translate_m2c": {
+        "n": 40,
+        "mean_delta": 0.03940250470874281,
+        "bootstrap_95_ci": [
+          0.005513652591207958,
+          0.07727086068563097
+        ],
+        "unit": "sample within this frozen set; does not measure seed-to-seed training variance"
+      }
+    }
+  },
+  "metric_code_sha256": "fb50c3977d00d0845f0e9684e878e04060b7b9c65693ef27f8cfacc5b0d0d5e2",
+  "engine_code_sha256": "1947ed5fedf3df5bc692b1225c1845071c3f404d9bb1237c34f7b69fc8e41ea6",
+  "selection_sha256": "456fa2c6fb6d4204cd9d97ec4402bc1437c70b6fb2cd6c7fe637867ca053c91c",
+  "warning": "No heterogeneous task average, no claim of saturation or general ability retention. Sample bootstrap does not cover unseen-book or training-seed variability.",
+  "publication_note": "Selected current training controls; original report retained locally. No metrics recomputed."
+}

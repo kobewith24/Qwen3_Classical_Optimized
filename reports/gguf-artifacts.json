@@ -1,0 +1,38 @@
+{
+  "files": [
+    {
+      "name": "base-q8_0.gguf",
+      "bytes": 4280403616,
+      "sha256": "dd6b44904e5c74486187ceb1730967d460a78956df0ceb5d9cca758345d4f289",
+      "gguf_version": 3,
+      "tensors": 398,
+      "metadata_fields": 35
+    },
+    {
+      "name": "clean-f16.gguf",
+      "bytes": 8051283424,
+      "sha256": "73da5e10726b6f73fe421299159bce4a841279edde4368fb979ba73addf68f8f",
+      "gguf_version": 3,
+      "tensors": 398,
+      "metadata_fields": 32
+    },
+    {
+      "name": "clean-q8_0.gguf",
+      "bytes": 4280403424,
+      "sha256": "ead9ab7d90dbcc16c94114f684b2c5c2332f2208300304719c0a39fddfa692d7",
+      "gguf_version": 3,
+      "tensors": 398,
+      "metadata_fields": 32
+    },
+    {
+      "name": "clean-q4_k_m.gguf",
+      "bytes": 2497278944,
+      "sha256": "90f5a61ab9cc14f69b478d37040e21bfeb17d662bb1bc53e9cf91345a2b55211",
+      "gguf_version": 3,
+      "tensors": 398,
+      "metadata_fields": 32
+    }
+  ],
+  "source_checkpoint": "clean_2k_seed24",
+  "template_policy": "same explicit ChatML for all native comparison models"
+}

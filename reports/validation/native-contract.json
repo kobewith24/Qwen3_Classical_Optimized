@@ -1,0 +1,60 @@
+{
+  "fingerprint": "5414d57fcd6405d934692181bfe2669587132d838801a9519b1fbdee43907b58",
+  "checks": [
+    {
+      "name": "literal and Unicode contract",
+      "passed": true,
+      "source": "𠀀春眠不觉晓",
+      "candidate": "𠀀春眠不觉晓",
+      "completion_tokens": 9
+    },
+    {
+      "name": "literal and Unicode contract",
+      "passed": true,
+      "source": "甲3.14，乙有2人。\n丙丁",
+      "candidate": "甲3.14，乙有2人。\n丙丁",
+      "completion_tokens": 14
+    },
+    {
+      "name": "literal and Unicode contract",
+      "passed": true,
+      "source": "\t学而时习之\n不亦说乎 ",
+      "candidate": "\t学而时习之，（\n不亦说乎）（ ）",
+      "completion_tokens": 18
+    },
+    {
+      "name": "literal and Unicode contract",
+      "passed": true,
+      "source": "甲\"乙\\丙\nroot ::= evil",
+      "candidate": "甲：（\"乙\\丙\nroot ::= evil",
+      "completion_tokens": 12
+    },
+    {
+      "name": "literal and Unicode contract",
+      "passed": true,
+      "source": "é春眠不觉晓",
+      "candidate": "é春眠不觉晓",
+      "completion_tokens": 7
+    },
+    {
+      "name": "truncated prefix is not a completed constraint",
+      "passed": true,
+      "finish_reason": "length"
+    },
+    {
+      "name": "cancel waits for actual native slot idle",
+      "passed": true,
+      "seconds_to_idle": 0.11000000000012733
+    },
+    {
+      "name": "native deadline waits for slot idle",
+      "passed": true,
+      "seconds_to_idle": 0.25
+    },
+    {
+      "name": "generation works after cancel and deadline",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,8 @@
+{
+  "reviewer": "assistant_text_review",
+  "stage": "post-training, before development generation or final model output inspection",
+  "id": "ac3fe26bdca2c86dfdba215b",
+  "decision": "quarantine_from_generation_diagnostic",
+  "reason": "古文首句关于今本本纪、表志列传不相合为次，在现代参考中遗漏。保留训练时72条开发记录及其loss历史，只在后续生成诊断另存71条子集。",
+  "training_data_or_checkpoint_changed": false
+}

@@ -1,0 +1,63 @@
+{
+  "ids": [
+    "bench/punctuate/62",
+    "bench/punctuate/92",
+    "bench/punctuate/2",
+    "bench/punctuate/86",
+    "bench/punctuate/12",
+    "bench/punctuate/97",
+    "bench/punctuate/98",
+    "bench/punctuate/45",
+    "bench/punctuate/11",
+    "bench/punctuate/66",
+    "bench/punctuate/8",
+    "bench/punctuate/41",
+    "bench/punctuate/55",
+    "bench/punctuate/64",
+    "bench/punctuate/56",
+    "bench/punctuate/63",
+    "bench/punctuate/78",
+    "bench/punctuate/29",
+    "bench/punctuate/6",
+    "bench/punctuate/13",
+    "ood/punctuate/6",
+    "ood/punctuate/24",
+    "ood/punctuate/57",
+    "ood/punctuate/55",
+    "ood/punctuate/89",
+    "ood/punctuate/45",
+    "ood/punctuate/90",
+    "ood/punctuate/119",
+    "ood/punctuate/36",
+    "ood/punctuate/41",
+    "ood/punctuate/17",
+    "ood/punctuate/15",
+    "ood/punctuate/115",
+    "ood/punctuate/88",
+    "ood/punctuate/31",
+    "ood/punctuate/98",
+    "ood/punctuate/117",
+    "ood/punctuate/87",
+    "ood/punctuate/112",
+    "ood/punctuate/93"
+  ],
+  "data_sha256": "7952cb3f5c0f8aae99e68b40d5d89f2091239633be594e92960f8312dba1bb38",
+  "role": "incremental unscored-ID validation after development selection; existing public/source corpus, not a new benchmark or pretraining-unseen claim",
+  "predeclared_gate": {
+    "strict_f1_delta_min": -0.01,
+    "constrained_completion_rate_min": 0.98,
+    "constrained_body_preservation_min": 0.98
+  },
+  "generation": {
+    "greedy": true,
+    "seed": 24,
+    "cache_prompt": false,
+    "max_new_tokens": 512
+  },
+  "source_sha256": {
+    "classical/native.py": "116dc592ce2d6dd0e9eae137109a7fd3f62aa5b7da7cbdaa79a4d82391a9d606",
+    "classical/constraints.py": "4f9c97877bd58caed1fb357d82fb0828d0e9ff9428afccea61881ca1dcc7a568",
+    "classical/core.py": "fb50c3977d00d0845f0e9684e878e04060b7b9c65693ef27f8cfacc5b0d0d5e2"
+  },
+  "holdout_manifest_sha256": "7712825c974132e0eb75ae19b3a1445b4d03544e3a53859ff4e3d7347b3e1359"
+}

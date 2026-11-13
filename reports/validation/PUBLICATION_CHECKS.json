@@ -1,0 +1,28 @@
+{
+  "scope": "Publication checks; full GPU validation and training were not repeated.",
+  "unit_tests": {
+    "run": 62,
+    "passed": 62,
+    "record": "publication-unit-tests.txt"
+  },
+  "powershell": {
+    "files_parsed": 10,
+    "passed": true
+  },
+  "python_ast": {
+    "files_parsed": 45,
+    "passed": true
+  },
+  "markdown_links": {
+    "passed": true,
+    "missing": []
+  },
+  "private_notes_ignored": true,
+  "runtime_and_model_assets_excluded": true,
+  "legacy_project_directories_excluded": true,
+  "credential_scan": {
+    "passed": true,
+    "known_local_tokens_checked": 2,
+    "generic_formats_checked": 5
+  }
+}

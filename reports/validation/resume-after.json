@@ -1,0 +1,51 @@
+{
+  "document_id": "26eca521138ca46422769974940585241b0552ff3e20d89ddf37abbcd8bd87a8",
+  "checks": [
+    {
+      "name": "revision and manual edit survive process restart",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resumption only generates missing segments",
+      "passed": true,
+      "detail": {
+        "saved_before": 1,
+        "new_generations": 3
+      }
+    },
+    {
+      "name": "complete resumed text keeps source body",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cached prefix has zero new token usage",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stale edit rejected after restart",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fully cached document generates no new tokens",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "metrics": {
+    "completed": 3,
+    "failed": 0,
+    "cancelled": 0,
+    "output_tokens": 615,
+    "cancel_requests": 0,
+    "reader_timeouts": 0,
+    "reader_cache_hits": 5,
+    "active": 0,
+    "queued": 0,
+    "queue_capacity": 4,
+    "reader_jobs": 0
+  }
+}

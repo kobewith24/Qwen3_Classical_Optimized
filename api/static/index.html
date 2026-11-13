@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>古文研读 · 本地文言文助手</title><link rel="stylesheet" href="/app.css"><script src="/app.js" defer></script></head>
+<body><main><header><div><span class="eyebrow">CLASSICAL READING</span><h1>古文研读</h1><p>给古文断句，逐段理解原意。</p></div><div class="connection"><span id="model-name">正在连接本地模型</span><button id="lock" class="quiet">锁定</button></div></header>
+<section class="toolbar"><label>处理方式<select id="task"><option value="punctuate">原文保真断句</option><option value="c2m">古文译为白话</option><option value="m2c">白话译为文言</option></select></label><label class="file-button">导入 TXT<input id="file" type="file" accept=".txt,text/plain"></label><label>最近文档<select id="history"><option value="">选择本机记录</option></select></label><span>仅在本机处理 · 每次最多 3000 字符</span></section>
+<section class="desk"><div class="paper"><div class="paper-title"><h2>原文</h2><span id="count">0 / 3000</span></div><textarea id="source" maxlength="3000" placeholder="粘贴需要断句或翻译的文字……"></textarea><div class="actions"><button id="run" class="primary">开始处理</button><button id="cancel" class="quiet" disabled>停止</button><span id="status" role="status">选择任务后开始。</span></div></div>
+<div class="paper"><div class="paper-title"><h2>研读结果</h2><button id="export" class="quiet" disabled>导出文本</button></div><div id="result" class="result empty">处理结果会显示在这里。</div></div></section>
+<aside class="note">断句会检查正文是否与原文一致；若模型改字，导出保留该段原文，并标记待复核。译文按段生成，原意、专名、否定关系及跨段指代仍需人工核对。</aside>
+<footer>原文、已完成分段和校对结果保存在本机工作区；刷新后可恢复并继续。部分处理时，导出文本包含尚未处理的原文。</footer></main>
+<dialog id="access"><form id="access-form"><span class="eyebrow">LOCAL ACCESS</span><h2>连接本机阅读助手</h2><p>输入新项目 <code>data/access.token</code> 中的访问令牌。</p><label>访问令牌<input id="token" type="password" autocomplete="off" required></label><button class="primary" type="submit">连接</button><p id="access-error" role="alert"></p></form></dialog>
+</body></html>

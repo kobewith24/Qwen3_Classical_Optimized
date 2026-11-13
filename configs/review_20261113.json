@@ -1,0 +1,1826 @@
+{
+  "date": "2026-11-13",
+  "reviewer": "assistant_text_review",
+  "independent_human_review": false,
+  "scope": "Conservative text-only alignment, information coverage and visible OCR review. Uncertain terminology is quarantined, not declared erroneous.",
+  "reviews": [
+    {
+      "split": "train",
+      "id": "704f694fa620f744863e5ce5",
+      "pair_key": "9903d6f9b85f4665d8bf2c38b2527c71500affbcb2d586c789a28970156a789e",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "f316bea3b8de122d0b36dee4d4c7f4533adfc93668d3c97cc4354117d5a31fa2"
+    },
+    {
+      "split": "train",
+      "id": "71c7fe1756ccca50c9dc5c38",
+      "pair_key": "d5b810057b43cc16e4263393357437476493e7dc99dd6c76c2959c489f28ea4d",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "10468dd68e461d7cd3b83f3b97592c5151514dae4bfecfac943afba39b48aa6f"
+    },
+    {
+      "split": "train",
+      "id": "8340f81ce0962ae9177f2145",
+      "pair_key": "083c458450e66c8fe73ffc5e38e17e88fdc1c7aba1eabfc8f14d56b97ae46cc7",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "91b4702be7e3932da78cda7e2f2ab8df0ced701a08d399e81bc5e75cb7cfd7c2"
+    },
+    {
+      "split": "train",
+      "id": "b1d3e54341e582edc9f87b0f",
+      "pair_key": "e87f839c9d073cc8e1fb310fa782bc9a55d649b58e1ef2d4f2fb432a40a6ae28",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "6d37c680abc1f5564ea18e9f97d0f4eb3244370893cfc05ec5f3bff7c7edc6c2"
+    },
+    {
+      "split": "train",
+      "id": "682ed78d7076096da2ad4d0a",
+      "pair_key": "4f86840b8271bc983e20257bd353ed0d5fab427a241d06a069024954a22b8a21",
+      "decision": "quarantine",
+      "reason": "参考遗漏末句“怀，贺之子也”",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "7d2c0ac2fa128c723a70964bf0632fe55d0c4eebd792aef6515cafbe028cae4e"
+    },
+    {
+      "split": "train",
+      "id": "c493774f0001a0997ec92743",
+      "pair_key": "3a33438ff19e56913fde41b26524aa557040f42353a242a411ec3068a1516c2a",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "5d257581a735cf1332ac5c231b92ebf46e2fca9b0a18bb984297da8e607f7bf1"
+    },
+    {
+      "split": "train",
+      "id": "47151361381555be21179c55",
+      "pair_key": "0073dd0961ac5bd919289d0786ed725387adce9d27c04caed6a65349d3c41fd0",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "c3ad3a178d68ec014ec37f0afabaf6b54918dfa24c3bb6a764d86517df73f389"
+    },
+    {
+      "split": "train",
+      "id": "16ae16a357b9691903a347fd",
+      "pair_key": "6800140e0205b13f1d2ba0f66c7c91e05f6a1d07718914961c679471e76d1c62",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "49d2f96e743f56b1275c19ec716adcf8c4889cef3c05f65ef91989d52ef8f634"
+    },
+    {
+      "split": "train",
+      "id": "e812b4079a6ba5c877b983be",
+      "pair_key": "2ec5cb92005a532965fc671f14803ead5cd91bc9a90d0e969b6b5613a8f2bd29",
+      "decision": "quarantine",
+      "reason": "参考多出原句未提供的紫袈裟来历提问",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "79baf17cfd32e6b8b4c78b6409d057aa2ae2629b6816803eca73d81b3c6b9fef"
+    },
+    {
+      "split": "train",
+      "id": "7b7c4c9f7a230dc6318bcddf",
+      "pair_key": "bee3c1dad689d499c8ab36bb0aff3bb952bd3479facedf704b2ace10d800afbf",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "11f9d40548b679f9df734d5d45d5635b7f9497ce5d14479b0e75cf203ba9b065"
+    },
+    {
+      "split": "train",
+      "id": "7fb5dfa97481286a2941613c",
+      "pair_key": "83f9d897a7573f342c704fd118d45835662889dd8f57a5501422e50e248d7990",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "9580468e4a55141db1229c46da964b941fa2c598474f868eecae5387cbaa4ca2"
+    },
+    {
+      "split": "train",
+      "id": "5f8380677857f41e1961a4cf",
+      "pair_key": "576dee47da35461c3cd5512097f49ecda1a5d2e8c0fe9a021b859f2ed04849c3",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "33ad27c128651fa5bc715072846f60099c65c36709b1e13300ec6d15738ad3a7"
+    },
+    {
+      "split": "train",
+      "id": "cfe23c361d4a804687b019ea",
+      "pair_key": "eea66d868c4a31dbf4396857d018397928c09eed82c5d8ff52d1052171ac5456",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "a5a8824b21c6e8e9b3fbf9565a42dbc63202ab78447832d8e8cce2f7d78a6e58"
+    },
+    {
+      "split": "train",
+      "id": "a205ca92f35f4aac67a60a78",
+      "pair_key": "21fb752a85013100245902d0550cc8749f4a804b7023a4f60656b467cd74c3d7",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "df1662aed8d28988c6e34edfe98870d79b182cf78d29b683f42fa539478ff8f6"
+    },
+    {
+      "split": "train",
+      "id": "c7099c09e6142d802934b3c2",
+      "pair_key": "c8ec06e8a73728a510fd8fbbb9eeddfd0f3714b6be346eb0e623840cb9532ba2",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "85962bcb3222f4bf5407c3a3d77d04300e3f3d5a8f64d752330678e3fb3258d6"
+    },
+    {
+      "split": "train",
+      "id": "d6066413322af55701b6ad9f",
+      "pair_key": "b051f93cd313e1f3d1b00ba1fc5c100d5605c16ef1363e3ea7cf6a7c4ca40f84",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "78876c519cf1f109432c58503b5cbcd9d78169818ddaa2fef36b906361c53f96"
+    },
+    {
+      "split": "train",
+      "id": "488fb32066d590f1ccbc0c93",
+      "pair_key": "c0b76d42264e1fe33e7d09606f47b735b2ba8881af86b8666571a05787313221",
+      "decision": "quarantine",
+      "reason": "现代文地名“交阝止”存在拆字/OCR痕迹",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "77bf5d9dbc32aa2be854eb8b69dad5b5a664ac98f8a829e63dba705808860300"
+    },
+    {
+      "split": "train",
+      "id": "466a52225a70d7d3108ad70a",
+      "pair_key": "6ffed140a406116637bef94bd38e8a0f717e469740594cb704771ceb099c3c45",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "881bac688ae8244448e9889eb26eaa35d0b5fe2a5d2f083fabf64aacb95ff905"
+    },
+    {
+      "split": "train",
+      "id": "1e5a675a9734cc77c6f7d33b",
+      "pair_key": "c9e95ea53ae2a9fee1cd048ed14bc6dd3bfb2fa3003653e89339ae8c5b37e613",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "836147d868bc5f45e3b27a1ac877df5283327ccb493653288e3ae26b322c3b9f"
+    },
+    {
+      "split": "train",
+      "id": "8337ef1cf2a30f83a3066a5f",
+      "pair_key": "3458dabcf62098c8ac21b6edb21f32484522e117e621192f12a23b3630a7fd3a",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "5cdfb0a1f73c62fbf28cb30df0ed03fd5580eef2f13c310d3398ebd02073a0df"
+    },
+    {
+      "split": "train",
+      "id": "8fd6d3e810445a1eb56d7a58",
+      "pair_key": "2bb0a3d8a6de22dfa8528cbd7f6a00ab9b7aacee4872e4fed595589aadcca9aa",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "a3a81d0fb185b22fb34dc67b7a9e985b3ea1bb33f2a71334cb3ac3d04dbd078b"
+    },
+    {
+      "split": "train",
+      "id": "76cfe24e4e1e00e18916ee38",
+      "pair_key": "843ff192eb4f5a4c165959ccd8da1fddcc8b111c78fa26fbdecfd16b21198d85",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "f730c9c12009a4757d8300a1fa6213e490467b6380bf7b42a1d6dce9ba372eab"
+    },
+    {
+      "split": "train",
+      "id": "e43a74f70028bce67f1af6bd",
+      "pair_key": "ca8fa63e6c01625052bfdc8e0ffc9862ead784cec25f876341767e0d333c6292",
+      "decision": "quarantine",
+      "reason": "尉迟回被写成尉返回，专名不一致",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "27233dbbe98a1a85f75970d27f6de84c2356311d5be5e30e9b3f4c575655981b"
+    },
+    {
+      "split": "train",
+      "id": "c660b6626bc73ae0783a230b",
+      "pair_key": "7e4b574e865e553d4da01e7c46034016c48352c48bfed6ee5263b7ae98b6b07a",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "4ab71a9be329f070ef1a6dd0f4a1548932adddcc439c38e2fd50c0ed22e77d27"
+    },
+    {
+      "split": "train",
+      "id": "05abc3ad6d1a9e094c14f0c2",
+      "pair_key": "c76a95cc6469f4f951f86e4d9e0cac85c3e6590e22d0669c1a0ba505fad7e57b",
+      "decision": "quarantine",
+      "reason": "现代文赵籨与原文昺不对应，疑似人名OCR",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "ce996be0875c4829df3fe66323dfea70d93731c848951add9202d5feffef4af2"
+    },
+    {
+      "split": "train",
+      "id": "df2e3e898d7461ccde6a7d25",
+      "pair_key": "f1219404f65193b62e0b74e14f5c5e7a073adf6330b7b7d18c0337dd2b7d90a4",
+      "decision": "quarantine",
+      "reason": "齐势与齐发存在可疑OCR/异文，保守隔离，非历史校勘定论",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "46c9650055f41a989e3eb84edb90ec84d04567660d8dc18c68d74303aedd8ce3"
+    },
+    {
+      "split": "train",
+      "id": "9469bbb11a627e0482d8320b",
+      "pair_key": "cb2afd5bf21ab4f0ea0f83857546809f8fcc09d392506ad9d0b1580ca78bcaea",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "ad7099b758e430a92ffd9ced9acfd34bac1d160f009015b0b7ebcc972c301cee"
+    },
+    {
+      "split": "train",
+      "id": "08edcc2f7346824bed3e87f6",
+      "pair_key": "c6a085e0a7e369c1f5990616edc3231925cbfd30a20e3a1d87cd814a7d28f0e6",
+      "decision": "quarantine",
+      "reason": "文言目标多出“明诗传”，现代输入未提供",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "d1fc507fa4b967a2b0bc9ac6d88f7f7085d7e0e30db5f1427e01f07daa5728aa"
+    },
+    {
+      "split": "train",
+      "id": "6e5d40af5c81bb7539f4589d",
+      "pair_key": "e553c5636702f4733b3b237348d6c9edb44c6cef74b1f2eff051bea39d7b78c4",
+      "decision": "quarantine",
+      "reason": "现代输入截断且目标包含缺字占位符",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "53b14e84a7eb418933d1b57f236f15b38c615518cf9a571f3bea5fea47b724bd"
+    },
+    {
+      "split": "train",
+      "id": "772ee02b6a290d547332fbf6",
+      "pair_key": "3276aef14df1ddbcd5a5cc37047d3bbb62356acc4dcb9a0341bd25c6f99aa641",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "e5d4580639afba36a179866edba8a34b9611eb2f430a03f98ddb5ec7595c297d"
+    },
+    {
+      "split": "train",
+      "id": "567e5dc144609b9325fd73e5",
+      "pair_key": "3a1543b36db3ff986c914c8d5fb3a81a22cdfdf1bb6982565a0e2c83e4d88e30",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "427a1c44736cd72b19caa9cf1c95e745513010319ab3423b56fbd6f0e566f961"
+    },
+    {
+      "split": "train",
+      "id": "107c8ca7ed707ca55a1e4641",
+      "pair_key": "9309f36607d24c35667a77d8013b2a91663ce4925738f3f51ef16b5a06b9b54c",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "4ca10056074196cd25e3adaebd5d3a5094208964ddfce81981c2e218a5d20226"
+    },
+    {
+      "split": "train",
+      "id": "6c53ce8ac106636958dc9b48",
+      "pair_key": "ada2b464b65bb9cc4a860c01f7611423706a6e891da6e219c22ce79e3dd88a56",
+      "decision": "quarantine",
+      "reason": "现代输入含撤军原因，目标仅“甲申，解严”",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "6c771f53327731692c0990bdf89f3afad63ebc5d08250acbb9d9282ca3eca9ed"
+    },
+    {
+      "split": "train",
+      "id": "06505e4e7f645d60bb72041f",
+      "pair_key": "3795e067165a8862743d8c56e7700a23a2baa5aa7a4b9bc8e36d47a2223d96ad",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "222cbd3b4493c2da8c9d9ab2cf6918006dc8b88f0cc9460aa71207743f9bcc78"
+    },
+    {
+      "split": "train",
+      "id": "959d72ae8346f90e80cb17bf",
+      "pair_key": "d373f7266f06184c448758d5f90887e8600d9011270f6687c214915228bc0398",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "ffe0323122fe539d6cef44e2ef5f6dade3331a25b379f9cacd27d1ae9b2671f6"
+    },
+    {
+      "split": "train",
+      "id": "34c1a48aa2f69819fd99fd29",
+      "pair_key": "fbada1c3cc40bdbfeb549dbc684bada7430d9443f7da3e98429bf2a625ef77cb",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "f1d234d00009652af1e615561ce8acd7bfc8dca5e95c6a33003ec60abc45326b"
+    },
+    {
+      "split": "train",
+      "id": "44762d0fe6620e30fdc362f4",
+      "pair_key": "a01915d1014417b00481c78a74fd9b10ee7d8a28ca5755dbd8ab3606a263582b",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "bcd29b4c32d002b3f00c56a06a70e6129121efcbe32ecbda3ebf1e9fa409c092"
+    },
+    {
+      "split": "train",
+      "id": "794c3d94190a903b84d22627",
+      "pair_key": "d4b5a46a351ec0e228d1b48671880e8f785218097ceb30a8a4f50f4b79e6e8ad",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "2f3357e9edeaba7df58b59f7ce2f25e136ceb8cbe336333793d544ca9a61f2e0"
+    },
+    {
+      "split": "train",
+      "id": "9ae8df84fa898a0ab9d0238d",
+      "pair_key": "601dd3f718df2228d8c96706a3c579bb93fb9a68cdefa556c0d1a2a46a16613b",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "6d336ce1632f3dfa261b16b31a53514728a5524cfe478d87beb6e6149434209a"
+    },
+    {
+      "split": "train",
+      "id": "84d297567a90671d591d3600",
+      "pair_key": "3e032e3cd86e099df2b810a116c32c3ccd80c7361b567ad20b2a7fea03453aa8",
+      "decision": "quarantine",
+      "reason": "编辑符号及软综/绞综术语不一致，需源本复核",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "c1f3c7c45822061020a97af5f6d753167e3e97017cab2e5412651d9d0482e2d2"
+    },
+    {
+      "split": "train",
+      "id": "77f2f2f06205f51aa783459d",
+      "pair_key": "e835547151262ebb0aab3d3200bb7ab519a1b5cb149ac038f0f3d4836f848c0b",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "c82a519e178a0a655dd24a195b8a6551c58a29fab33e1f000b2bc3674eb4dc1e"
+    },
+    {
+      "split": "train",
+      "id": "6371cddecce74203af2331a0",
+      "pair_key": "1a8b4c943cfbec062cd93685b16d469cf46c2906385e1965651ab1835ed2e49d",
+      "decision": "quarantine",
+      "reason": "杨期与佺期人名不一致",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "3373418c12d1a564dd3caf396fac58bcf18c5e2e10dbc3cb84385d2ff3f24bdd"
+    },
+    {
+      "split": "train",
+      "id": "9aca5d1b4ca782719dcf5aef",
+      "pair_key": "cd84ecb1db8e3f16a0cea373df6f0a5de831d50a7f46d90d15183dfa1b1c848e",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "a563f2e9222acd20755de20819373075a24def63597268e59098a7867e60de11"
+    },
+    {
+      "split": "train",
+      "id": "690f6f7549258cafae6ca350",
+      "pair_key": "b144abdc65013a01214a705838da0518e3e3e3e4725d5bd751427f77646a9448",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "d90195f5e74576a9fefda35a72ff87ecdc7e28ed71f7ba22f0f2567745f75b87"
+    },
+    {
+      "split": "train",
+      "id": "a4377e5ec655f7a16de71b6c",
+      "pair_key": "e76d770f578d1b3f3a1032411d8271c2874cb77f35dfdcba247263e3638a54b8",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "ad4ffa1b3efc2cd407fed33cb0507afdd8e655c061b2097b62f5843e73678e08"
+    },
+    {
+      "split": "train",
+      "id": "2186f2ed537d180b223d83fc",
+      "pair_key": "afd959d02a737d595800d90e68e2ec75bfd2f1612fcf6c784a46421564d21cbe",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "7b4f011c01311ac0b010e6e0d9f6c5ad452aff1a7c40d5b567247b1f12a88611"
+    },
+    {
+      "split": "train",
+      "id": "c3044b1f2bb59e2e1fc1beee",
+      "pair_key": "c9257ad8488acc40469b23a0e9c101d46f27f042b040ba32d4deaae880e55548",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "376d18cb0c7aae48ccaff8c065bef12392dcd9793cc57eb7d853dadee12337a8"
+    },
+    {
+      "split": "train",
+      "id": "684397b599d2596890410550",
+      "pair_key": "85fbac2203c8cfa602cfc660f7b3de3d9af46493ffb986a470d0a7f99d84ea77",
+      "decision": "quarantine",
+      "reason": "坌人/涌入、井郾/井沟存在明显可疑字形，保守隔离",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "d96932aff2595402d9b3e7b16b602c9332288e870677625371954ee10724ce2c"
+    },
+    {
+      "split": "dev",
+      "id": "8068716cdfeeace2c116ae00",
+      "pair_key": "36a373bfa888c127a954a3b64b2fc701ad910a58b5361141926c721b8e4780e3",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "7e3804ca4bb381f3f1477a7f279fc6aa70f2925cbcda8f814274fd97e7be6434"
+    },
+    {
+      "split": "dev",
+      "id": "f77caaff02679e5726aac875",
+      "pair_key": "b7ff2fb6d2a2c7e1c0c4f43a6f69c5f3c733911ba8cd7856c791a4943d02fe4f",
+      "decision": "quarantine",
+      "reason": "潘纯陀/潘纯专名不一致，待源本复核",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "c196aa36b20826f24d47097c52f1aba7a4f6d66e2f8578533d02199783c6d735"
+    },
+    {
+      "split": "dev",
+      "id": "bce110cc8dee2092472f7969",
+      "pair_key": "cc05fb88f67a5967b2646cd31abbf8204e25ab9b6c62ad59b94a1ce1459f74f7",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "c3eea95fa6869e3102f4b8f0e255f3a43308126c7755a9d88edf458f32ffb15e"
+    },
+    {
+      "split": "dev",
+      "id": "69f9fee2ec54cc7902a11bcd",
+      "pair_key": "ba7eb1b6859496c4c827abe2ea8bbc539610fe133aced59d1396f8180c8ff343",
+      "decision": "quarantine",
+      "reason": "伯与侯爵位不一致",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "cd7fcc7ee23f66b9c52fddf6a00845f2e1fda64bf2815663e06427276d972da2"
+    },
+    {
+      "split": "dev",
+      "id": "d8b409e994cce556b3e9ef58",
+      "pair_key": "18940e290d65e5f946798e23bbc3f745897a77e187995b6f7c771c12851f83e3",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "f752392432c2eaad7f9d0c385b68bdd5fd0e98f504474c4adea842e554a39784"
+    },
+    {
+      "split": "dev",
+      "id": "f8bbc03a24eb771bc07d340d",
+      "pair_key": "e3f367f99249528c6bc18157a19ae112b31684141b57119b7344118210455420",
+      "decision": "quarantine",
+      "reason": "参考补入“不能回去”依赖未提供上下文",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "35bfde18dca5871fa11449f797f1df6d49579aa5c1250e24ec62de85d1717de0"
+    },
+    {
+      "split": "dev",
+      "id": "a91d3f38bdd5f03839aee6d4",
+      "pair_key": "8d7af87f56f273838c0e0b4d43223c6d06cfe934088771747875bc2b86511077",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "f8f2bbc89acde82a9e8b12f47ceda36a903311845a603fff4098a696ff3085da"
+    },
+    {
+      "split": "dev",
+      "id": "a84d33550331ac3217117962",
+      "pair_key": "03f12bf9d6b6dddb88d9f3ae8f63d363fa67d7478ff9284f8a8c06ae644752ca",
+      "decision": "quarantine",
+      "reason": "卢循/循墟、佥/王愈等专名疑似OCR",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "7c64dfe1edfdd64cd60908e7c90eb30b7f7ce14c7ded298daa83869d12841d70"
+    },
+    {
+      "split": "dev",
+      "id": "91abb3f17d64fce310e8ce61",
+      "pair_key": "023119dbf5b081aa0c4e623c92bca83642d5ba6a5a8f4bfc33826fe2d9c769f1",
+      "decision": "quarantine",
+      "reason": "现代参考含“诬蠛”可疑OCR",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "a6915d1e43f72cbff99ff6f988194ab51a9e2e2cd935d14d11600cb487b198bc"
+    },
+    {
+      "split": "dev",
+      "id": "d265ea001facf53be10c8d79",
+      "pair_key": "b1b023810ee6dfbeb1871a07a742f8238177b9249b98e61bff17e0d68b206d20",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "77adeba2438f534185f34dd1959e2d52e8e189e436b805ca07cddf3bf50fa7d1"
+    },
+    {
+      "split": "dev",
+      "id": "29b344b2b752aeab9da02593",
+      "pair_key": "2bf509382671fce0eed7912ce6212a4dcf48962d94fcb89b45e5c3bf2afa58ce",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "0d70cde008341195460a14075cbf4cd85d0bb6e779fc0ed3db6728bdcb8bd01c"
+    },
+    {
+      "split": "dev",
+      "id": "31ec419d198269e77fe8ea7b",
+      "pair_key": "85feb9b9fd4724541555c981c553a91849e741375da44ff1996c29e1db8a85d7",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "9472f4c3290ff89b186c4fc82a6a78a9ee7c6430c6cc9459174e3e2ad9951eb2"
+    },
+    {
+      "split": "dev",
+      "id": "0cb8dbe3a0fbb50cc6cd4798",
+      "pair_key": "9ec80078c7692734926badc3886efae3305d38bce3402b40d1edd5716085f5f4",
+      "decision": "quarantine",
+      "reason": "宁远将军/宁速将军官职字形不一致",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "eb2f624830e0a2cb3708743cb5af8d4719cc9471fa58e5172506686362b73a92"
+    },
+    {
+      "split": "dev",
+      "id": "f079685c2456a90950ef363b",
+      "pair_key": "c92892167ee7248daf798292feb388b942e02e262bb895e39323e8511ec2155e",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "30896ab6adc6705a431731cbd86c49448998bded30c8ab66500ba3facc4de0ed"
+    },
+    {
+      "split": "dev",
+      "id": "5528a87c91f165eacd3390b0",
+      "pair_key": "4075efb1b2af03115bc2129707e7964b93f7bb57997bc35e5667cc7316711012",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "900038425cfeee27e774d0d24e5ccb9bd26b96cb5dfac273ec88366963172936"
+    },
+    {
+      "split": "dev",
+      "id": "fbcd5f500d1453e82cb673d4",
+      "pair_key": "b85fa3c8fa407af5aaf97ed2d5099785aa1561c77d869d2a09e48032158ecfd4",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "94e7ba1015619cd1dff64a7413b947e4557725bfcc94ef7c3c537de99156cbc5"
+    },
+    {
+      "split": "dev",
+      "id": "5b6fe5b69f17d40f4a12ee2b",
+      "pair_key": "8a4b6b7fda0d451f3ce72d9198c473106e25190c9c2bd7431a24824d1d4d8870",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "482ddbbe617d214ca03f51a0ebdc788109df02a453cd8b5de3c2a252e826ddde"
+    },
+    {
+      "split": "dev",
+      "id": "53518782b335139c8f24c568",
+      "pair_key": "112850066c82ecf07fd9b2acdf2aea7bdc1cbcc9446cdb73c6a92984a8076c9b",
+      "decision": "quarantine",
+      "reason": "叛处等可疑OCR，后续需源文复核",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "802e3e4c57f4b49a6c4385944e506f86c62427f6069e2a47dc462627fb4da88d"
+    },
+    {
+      "split": "dev",
+      "id": "6368606ea170d93da0bf0593",
+      "pair_key": "edcdaab200713e5e96461fbd3b7c59569328dcd3014fa9ca3bceb652a1774e97",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "86de597cbcac3ad79ddc8b22eb4072aa18400808b150059dbba1c5e5138d9b00"
+    },
+    {
+      "split": "dev",
+      "id": "edda0ffeef9b9ce632159a39",
+      "pair_key": "acc7bfe73a53117b2a1778b553d88a4182ed7246e5196392ba8e6931125fc58b",
+      "decision": "quarantine",
+      "reason": "参考“隧死”“包之五”存在OCR/专名异常",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "20086f7b97ecbca10e0976eb530f9a52177fcbb499632bd655b98a08d2ebfeb6"
+    },
+    {
+      "split": "dev",
+      "id": "cdabae6b65d1387ec34d8f94",
+      "pair_key": "6e14d1d64049bfaf7741f24741db2e8174396caddd6f2054c47a2b15724804ab",
+      "decision": "quarantine",
+      "reason": "道路“子坦”存在OCR痕迹",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "4695991742d5f469f1a5a30e34c211aa68009df19b4be44d90d5eabf134ce3ee"
+    },
+    {
+      "split": "dev",
+      "id": "12efba47a94b68e58139525d",
+      "pair_key": "ad7abf34dfcf857846779990832a99bab7d368e0ba17fc09127c4e7bf3c4cd71",
+      "decision": "quarantine",
+      "reason": "现代文“蓝纪”与文言“纪”专名不一致",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "b4d03c737217038c36b84fc44f1a11877489421dbbb2056f8080e33b8a5cea0f"
+    },
+    {
+      "split": "dev",
+      "id": "e0b22349e33b4aeb8b0a6e00",
+      "pair_key": "11cde63e71415dacbeedcced1123c4305041f612020598b027739d7143748a78",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "d8e08221d058293b0e0945b1c11e11a266dcafa60f5027bcc553e9d26b02a2bb"
+    },
+    {
+      "split": "dev",
+      "id": "ad20dcdbbcb2d5ed000987fa",
+      "pair_key": "7a9090917dd7f947a920d4ce6ac840ddb03309875089168841cf0ae24b98aa2f",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "950ddb76764c3d870d48bcff521071eb5f336c734ce839b9da68cbed33837566"
+    },
+    {
+      "split": "dev",
+      "id": "e4eb7fa8983469106226ccd8",
+      "pair_key": "d84b499454e18d5f5a795593fd5b69d00a811ad5dff029b2f18b97ad7c19619d",
+      "decision": "quarantine",
+      "reason": "寤宿被解释为领悟归宿，语义可疑，保守隔离",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "781d159664ec8742cc34506fbc258773d93e437d3363e1db159d2f78c944eaa5"
+    },
+    {
+      "split": "dev",
+      "id": "a5f6e6371e3f055200c099f1",
+      "pair_key": "ffedda0d70bb3ace2b5caaf73558593838e6850d57a79db162aeac77abd7dd80",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "1333de343dd8b4034ecc2c96e7a26c4675a09dcf262f887fe7d98ed97347d5e9"
+    },
+    {
+      "split": "dev",
+      "id": "c6d5ade3bfcffbe5eceb4036",
+      "pair_key": "ded04abb26c3c9bb74a92a17c8c7415c4a847c2f4b786f96466081117200015a",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "135ac84156636374f7dfe9d837a7e863dca30c693429c22587597d7f62712b79"
+    },
+    {
+      "split": "dev",
+      "id": "98ae984473a72f95c40b6f89",
+      "pair_key": "1e18383f4bc658639c4fc0bdbffbdb250f92722d44f0d46720b8c74c6f2928db",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "509941e534788e35b7c7c1d81746901649d734b78d87c265650cc84c4b125324"
+    },
+    {
+      "split": "dev",
+      "id": "effc97742d950c6ae0dc6400",
+      "pair_key": "0542e70007f655d863fef2ea509634e629386a98bcfda33c05664645168f39d1",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "5829d2f2d2a6cdd518f03d262914f28088893a0606d50f5f8de7c0e1f45c1499"
+    },
+    {
+      "split": "dev",
+      "id": "324b61efcebf8d91938087ed",
+      "pair_key": "f3dfbc525c1c7cd8329e9f56f75595f92936c38145d73aa688fb845c48b02ae0",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "4b8c376dbdefee5f2f881a7831489ecab0d6d657661842063d0ce5a3ba630a19"
+    },
+    {
+      "split": "dev",
+      "id": "fbffffb587e0c7697cfd8a80",
+      "pair_key": "0ca8dd216d4f3305ee46e8679fecce1130e0442735b8537fdc47b8ae580c46a4",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "54215da1b30a86c9b84abecc24122632aac633582313d231f7a1dbbb8ec7c9e8"
+    },
+    {
+      "split": "dev",
+      "id": "41890c94fa939a0a6895f886",
+      "pair_key": "4890f28e18df671c6836e018de17b27c4fef6f129760bcd1df9bf9065b5efc00",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "cdc97eda44c4355a8d35a793f3d7105f385a6454960299ac2b1261dc3de41fed"
+    },
+    {
+      "split": "dev",
+      "id": "ce09d1ffcb6c6f8300aca7b1",
+      "pair_key": "73b2ccf25d9e541653ecd2647d0caf0ec390d89f8ca2a6124a49b8afe82dbb09",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "031293782285a6c2f87230b77db388237d666de496882a38355b3b8d828acc7a"
+    },
+    {
+      "split": "dev",
+      "id": "2eb66364bce634d8f02c36c7",
+      "pair_key": "f9415d006035e59f35b71e598954bd93cca0a0c66b65c4f73687c250ab21b933",
+      "decision": "quarantine",
+      "reason": "诏书/韶书可疑OCR",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "7dfed8168a5bffb3603276c2ee9a71caa61e17a4e98a516e0c21be4dfda4146d"
+    },
+    {
+      "split": "dev",
+      "id": "b523d7b5d98d461430c56f8c",
+      "pair_key": "91dd8944130abbbf88d4eddab99e8d7d3bf65b01541a7b0a66e9ffae0211d713",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "251e24ef32741303a5430e82bad2225bf8d5f1c349ee09b16e739d8e47478355"
+    },
+    {
+      "split": "dev",
+      "id": "3ca06a7ab628d3efee81c668",
+      "pair_key": "0ad97e871bb41aa6db96f15f47d3f1102415cb0ae02f63a54c2c162b7711ee6f",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "e46371494d9baf5ac023cfcb6f0019983cc365095d59295337d7f583d12e190f"
+    },
+    {
+      "split": "dev",
+      "id": "d09154455b05be6d9bcc510f",
+      "pair_key": "2e48e9eb6d59f79aad222ba568c90fe33616ca5ca772bf5596dd1ee74fd20b3e",
+      "decision": "quarantine",
+      "reason": "现代输入“选面”及“三事”存在错字/未对应信息",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "9fb5113e764a659847435f1ad08679f23286b2e8b16febbbe43e6cfac12aeadd"
+    },
+    {
+      "split": "dev",
+      "id": "ed15847df9c262b284132ef5",
+      "pair_key": "ea3512391349b9f3b1f7ad3a69e250c9dcb5e36c30560f17cbe710069b70075c",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "ead90a93523c1c9c05568809f3d697030f597fafb18bca9c2ca11c7cc0dade2b"
+    },
+    {
+      "split": "dev",
+      "id": "5039834d90018a60a1c877c2",
+      "pair_key": "08d84b98dc878699633e35a14bc35dad570859a462669afe2edb459fa37dfefd",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "2da3eaf6245c58922d1d546809baf9929385241eb59e282b1d9f68fa76d86e0e"
+    },
+    {
+      "split": "dev",
+      "id": "af677294fbb5a8ddac231578",
+      "pair_key": "1cc271d93bc2a0eddffe0d59c14a7ab81aeacf2cf7b9b34e7ec94d494e71b161",
+      "decision": "quarantine",
+      "reason": "现代文“几个入学习”存在OCR",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "96728597f3b6c57842a82079e99d33c31a0e07605ab892f53b388ad6aaffca34"
+    },
+    {
+      "split": "dev",
+      "id": "0bec7cee2a8a58d045686b63",
+      "pair_key": "c09fe412f90ceb2815b39053e678e6ffd51cca4f683715e7836db3a41a1a4e5f",
+      "decision": "quarantine",
+      "reason": "朏、胤被写为谢肋、鱼腿等",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "c758086ede29a1997038fb6c362ecec437423f60625927151cf7082b44c9f534"
+    },
+    {
+      "split": "dev",
+      "id": "0a4d6212558a25cc13b22db1",
+      "pair_key": "73e37d6ece583dfec8740a8716cf7b0dbad91804d036bb035872f85c64b95159",
+      "decision": "quarantine",
+      "reason": "东西宁被写为东酉空等地名异常",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "b9f72bc658fcfac8a908dfbaa4bb8c6dafb5e24d0a5f3a6bdd117eb9297d50f5"
+    },
+    {
+      "split": "dev",
+      "id": "5c7a1b43da8ce0e67c9543b8",
+      "pair_key": "f556f8b42919dfc0eb7fedfb9592295916c19d219eb68b8100c94fc3ec0bb7d6",
+      "decision": "quarantine",
+      "reason": "魏、费穆等被写为蕴、壹垄",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "4e7a1b9a29b62dfb977c5ca5014393ec06e249bbe43fbc4b3994e5603bada8fa"
+    },
+    {
+      "split": "dev",
+      "id": "5315ce7f8bbe4cde6f6d0dc3",
+      "pair_key": "d240396c7b173fe486074054ee10c812a47d8a898852fb6d5af33ff74b72b1a5",
+      "decision": "quarantine",
+      "reason": "现代文出现碧!室、任堕等明显乱码",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "3981c79b2f6b2ca99a8ab503983bfdc3e1598e029e7dea858d8f8549e10283ac"
+    },
+    {
+      "split": "dev",
+      "id": "12a27cce55baae8c89c8a55d",
+      "pair_key": "03d3aa6039637ec105860c2794179c290360f9b2ae879d8531d2f1db0887878c",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "c91b6aad74ac9057c3726331732335264e58fac1368e2006cf40d66fb838dedb"
+    },
+    {
+      "split": "dev",
+      "id": "36dd31c25bae17cb4f0dbd8d",
+      "pair_key": "a8228964dc21764852088848c707cdfceb54ee01ae0950771bc7785c291704ee",
+      "decision": "quarantine",
+      "reason": "京邑与地名对应中存在大段OCR损坏",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "67d28f510b1f60c461e5d89d4b0b125159eb1f2760219372284ddcc3667d3e99"
+    },
+    {
+      "split": "dev",
+      "id": "db5157592585d9f0bdcd6a91",
+      "pair_key": "803bfbbd8001a83a3c44d132e6c10d7eb2872c9109537591feb699738635e1d2",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "d434fb96232ec09744c7f6129c41e75d74c360c8f95da3bc383c38dd93e3168f"
+    },
+    {
+      "split": "dev",
+      "id": "7a20f1ac2fe3490c47888306",
+      "pair_key": "0c3bab6dc959a552649542497ef5a7f28b5142988694ab8a1ad867d79c6beed6",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "51298cc9a0cd7294c1999fe9b2dd788fadb18cd07a5753c9fd2e652d695db9a6"
+    },
+    {
+      "split": "dev",
+      "id": "cfc7e141f1e72418035c36ff",
+      "pair_key": "95ded124a52a0e13436c45abc43153d923da10890309e8505a9f3db0cd669b8b",
+      "decision": "quarantine",
+      "reason": "古文目标含怀挟入试，现代输入缺此信息",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "02f2d37743a96fbed60062a97bfbaa7b8efd45211cb71104e5aa5f840c69282e"
+    },
+    {
+      "split": "dev",
+      "id": "69ae9a20514c34bda89c5a71",
+      "pair_key": "cf3f522e990141c34818f0fc98f5a60d053f18091473dae26c209e5d7abd4540",
+      "decision": "quarantine",
+      "reason": "侯宣/亶人名不一致",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "912ca0b471133095859d1a683b676204766feaf1dc5d1b15f1a6ed0066194451"
+    },
+    {
+      "split": "dev",
+      "id": "284f0ff2434c73d3d9299cee",
+      "pair_key": "b48b02a2c7bb91e7eb1b4e1d0dad4b4fd7f3383d197f7fe3f22b0b7b2e528195",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "eeb116af4b613071f4b0527ca77f5100200d5624b321d37a864f7e91038fe208"
+    },
+    {
+      "split": "dev",
+      "id": "ac3fe26bdca2c86dfdba215b",
+      "pair_key": "e886bc56063d7f21548f31a6971456b263481ac7523434b52bdcc80104823e62",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "11828c6c2d6f2daca3a5101f89f54c60d9a4b1007a382b04856f62d199579d70"
+    },
+    {
+      "split": "dev",
+      "id": "00eb03b4e4a5d84353bbab86",
+      "pair_key": "d4e51e3263925b9c83d2dc275d9643ebfd07e80d3ff426279f05b2875b6caedf",
+      "decision": "quarantine",
+      "reason": "古文“会匈奴中都以汉法”句段可疑损坏，保守隔离",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "df7e656e765313802e5ce9bac78dd3ad4e3fcf5ac335a8e5e078565a5b3c5c38"
+    },
+    {
+      "split": "dev",
+      "id": "cb92fea734d48b2e73414706",
+      "pair_key": "8aff53e84969149a2d5a325a17ec06d339b18a0773607952ca6cd5d16476cc75",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "d7f663276c0d0afadf445be3d18c788b2d53a2e172c9cffbfe96bec01f19e84e"
+    },
+    {
+      "split": "dev",
+      "id": "7a2dc1c78bce037af69a4bdd",
+      "pair_key": "45a08587982b95584f8856ec4629d724fe9ee13f2a1b6f019984a3de9d314aad",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "0b7bf440a10fd7328c7940292d9c4bdc2168a2ff95674dcd73734069822b6b9c"
+    },
+    {
+      "split": "dev",
+      "id": "b83a77bce2636f8b956676d5",
+      "pair_key": "8668b7a75ccc2261b302b0c84de21b4c3e358f26d1448a9c33ee18ba9bc82735",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "1a51fb4b29722757e8191892a5b5c6afa67b780351ce464b3ac3b825eb89fbdb"
+    },
+    {
+      "split": "dev",
+      "id": "1fe4d674c16342bcadb3c601",
+      "pair_key": "99c713d13cd5242692bdb928088bc8a8bffbb772c21d3c8b235a6acc69898ec1",
+      "decision": "quarantine",
+      "reason": "挥位、束晋等OCR",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "33624d62ceec9fefd8c428627272c8e24181819f0759113e528ac2ddd14939fe"
+    },
+    {
+      "split": "dev",
+      "id": "1853a5f69c71b244b24ef511",
+      "pair_key": "8270f6756dccb53853e14b6c46803dc661675badf26e61190e8ffb4b2a7fc42c",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "88bd39e582138a7b864bf55324ae347f4853babdde8defd613f02c11bcd0bba5"
+    },
+    {
+      "split": "dev",
+      "id": "e647508cefaecc500c24c5f7",
+      "pair_key": "a26ce21311ae7022741bb3d1528568c398f2df63070234e7fd7962fd0a9f3fc8",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "27b8f66c1f684f1a6f0975224b878c1e49d71abc1cf3787185fd0a21ab34c397"
+    },
+    {
+      "split": "dev",
+      "id": "bf2c6e35b5da927d3a188c54",
+      "pair_key": "48a59ca40c136d8b03f3b644619a47b4a79f046dfdec73478611e326e3701eb3",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "0249d04a6672381d4615ba3f1cbb120cbedf7c244c96447f013c278ef69b873f"
+    },
+    {
+      "split": "dev",
+      "id": "46adfdf11cc509c84cc64a03",
+      "pair_key": "81f9ed59e059839e63c20b7845cfc17fe6af5729c80f769f344ea6aa015dbc3c",
+      "decision": "quarantine",
+      "reason": "袁昂/袁显、中权/中抚等专名官职异常",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "0245eefbe3818be3489e27fd3c4d95d6f1d2a4fe19ad4e3b3392fa25a3eaaa6c"
+    },
+    {
+      "split": "dev",
+      "id": "cb0aa96b6b7717a7bc3fd79b",
+      "pair_key": "92da7d7f178cadfb7038ad0b4f6c20f3a55bf26e8e4837441d2e71a00e86ef69",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "1862f3b684f94cb59b484fc312034f3aad03fd6426e6e5116178d430f11da0d7"
+    },
+    {
+      "split": "dev",
+      "id": "93e30f8272fefd20c5e818e0",
+      "pair_key": "25d4dc8648b3e4fec22d533db517bfc0cdc4f661a0e9c3ecfa668a10c04ee57e",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "7fd67ff37d7f417efcef9e63186c9e62dacd178d757e25ce06044a11cf871e55"
+    },
+    {
+      "split": "dev",
+      "id": "4ecc45734f11b2f8e7330da7",
+      "pair_key": "c6ba8453d13e8cc8af03547ab2e1606d1351199a888f6548ec4b103386d9d69c",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "5f789c63294cc6ff51c143c00376f92ea4fe8a1afd85ed1ece40d998e70e9371"
+    },
+    {
+      "split": "reserve",
+      "id": "bench/translate/2",
+      "pair_key": "d4c3f99fe9ae78b8795941d914e1f5ad3fadf4b7f224ab17a9ed3627e97461e3",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "dadabd70cdb48a3539587d07e96029acc2be306d68c05f672dbfae29640afa79"
+    },
+    {
+      "split": "reserve",
+      "id": "bench/translate/4",
+      "pair_key": "ef331612294ecc9f986c981fd741f0e45a47fe9873cf9f5c3ffd785c076deaf7",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "a95d22aecf4ea154e4799f5b561a63bdd3f7f3991ed26cedcbe5f0fdcfbb3553"
+    },
+    {
+      "split": "reserve",
+      "id": "bench/translate/5",
+      "pair_key": "89ae48002e52a71f3ec9ec8b28c63df779d7dce5f37d842f5bb407443a060104",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "2d1c144853a329a04b196cbeb5688f5b43df97405149863fc2d21c65313ee5b8"
+    },
+    {
+      "split": "reserve",
+      "id": "bench/translate/6",
+      "pair_key": "fdedd9f75706b5ad91fe15011e4e4147311daaf1f6ca17074ebb57703bafaf6d",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "b65534687d496fe5530ebb43adcec189fccd9dd606a763b7a60a375a608a33a6"
+    },
+    {
+      "split": "reserve",
+      "id": "bench/translate/12",
+      "pair_key": "318590e4e9865a40a6f6557b568b304c69fe303c678cbd1ea9dade0fc3247ed7",
+      "decision": "quarantine",
+      "reason": "鸟/乌字形不一致，保守隔离",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "2f39dfd0340db7a14071272764fc916a91e783c0137fbd04438fb715557416c4"
+    },
+    {
+      "split": "reserve",
+      "id": "bench/translate/16",
+      "pair_key": "c4862a19d3cc2b4d8d4c068d61e3328a1fe94137b6151f8053503fee6d093f35",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "6683b62978c972afd98348d0876ce86e1d3a5893e0e4aa3a2b2dd1fe32c42214"
+    },
+    {
+      "split": "reserve",
+      "id": "bench/translate/23",
+      "pair_key": "6ba3c5f08868798182edb67b7824de7e5d1a278276d3d1b7cdb005ae531d2a62",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "c71af3feba4d7d04274528291f11bfe3ed2adeb28f2c20c9daee32e48e29514b"
+    },
+    {
+      "split": "reserve",
+      "id": "bench/translate/26",
+      "pair_key": "e7a144f16337364e8c9ded4112ef03926c705e0142b8591b43459a94b620fd91",
+      "decision": "quarantine",
+      "reason": "仪礼服饰术语需要专业复核，当前不能可靠判定参考",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "e5d33cfda4686be6c1aef9902b48eda679edeaced3151b8df38f875e38d773ab"
+    },
+    {
+      "split": "reserve",
+      "id": "bench/translate/28",
+      "pair_key": "96255931c751b528c0e439f7a24acea6fd2ff5be3a47addb34acc450e1b0e1e4",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "68c4f7cadd05c931968223db38b26db00b6f23c777309753170308c2a2f73efd"
+    },
+    {
+      "split": "reserve",
+      "id": "bench/translate/30",
+      "pair_key": "14b980f2abff51db3e3e1a5db9f210d3f9914dbd193be24ff10fe719941ab8d3",
+      "decision": "quarantine",
+      "reason": "参考多出前句攻克城池的信息",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "d69cf5367c58150738c8dfe48ded225c1f37457e8fae6aecfe3d0d6a0aa337ca"
+    },
+    {
+      "split": "reserve",
+      "id": "bench/translate/31",
+      "pair_key": "0f3c9ef766b473b501025ff07eee18fcd858855e6ca893e0a18364c4ec1c8cdf",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "4c3e0f7b1a30d472f2c67f3b6ee0524fc83001d917460ed74ce02beed1329dca"
+    },
+    {
+      "split": "reserve",
+      "id": "bench/translate/33",
+      "pair_key": "090c6ba4e779b8ced7203488a24ff32329ebb993abc39506bff0d83c9ed093f3",
+      "decision": "quarantine",
+      "reason": "输入含重复和可疑损坏片段，参考进行了重构",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "89d8af473dddb27f0eb0ce8f9203bd009169351a3d7e91ddccdb0dd944e1f8da"
+    },
+    {
+      "split": "reserve",
+      "id": "bench/translate/36",
+      "pair_key": "fd3aec01e6a3201601a4a7d8b12e3f82fb2ee0e6e3145f3e8d65918a1ef3555d",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "cab278cce677a89e94ba45a274bce7fb979068f45fbcd65b7783d758b45a9938"
+    },
+    {
+      "split": "reserve",
+      "id": "bench/translate/39",
+      "pair_key": "770cc462c5ed98603dd1033c79c610d4d7803ecfe33b13fea6d98a71aa67e511",
+      "decision": "quarantine",
+      "reason": "不仁被限定为不能见贤思齐，语义对应不明确",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "c533a7d4124701a12daae29779054b849564e530b86f00191ed45c3f8e807905"
+    },
+    {
+      "split": "reserve",
+      "id": "bench/translate/41",
+      "pair_key": "00bcfa5736025d567853970ab148860258cbc6b7dbde337f930e1ca5fd2efffa",
+      "decision": "quarantine",
+      "reason": "参考多出东海郡人物介绍和前文背景",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "01664b66418418086576a4177ad34c75e21eaabb87019ba5fcbaba75882a51dc"
+    },
+    {
+      "split": "reserve",
+      "id": "bench/translate/49",
+      "pair_key": "494410ccc1511bb4fcd94b5db6dac6d440339b4e6f4e6ef29e182981f9f4942d",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "c1a59962bc1fc989272407440ec1718286788f6aae124fd4eba4f2dcd67ff4e9"
+    },
+    {
+      "split": "reserve",
+      "id": "bench/translate/50",
+      "pair_key": "7f5d70061d4ddc94e8f001a3083a54ab71ba335fd6fc3d3fdf52a6a788517b06",
+      "decision": "quarantine",
+      "reason": "输入与参考为相同地名列表，不是有效翻译题",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "7f5d70061d4ddc94e8f001a3083a54ab71ba335fd6fc3d3fdf52a6a788517b06"
+    },
+    {
+      "split": "reserve",
+      "id": "bench/translate/53",
+      "pair_key": "0faa64070580c7f484a81b67b60d4e8157ab4cea65372ed1f0cb7222f7d00d9d",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "3a9220117ac239348419149206f320c073dd360c68e311d250c0f19eab35f7d2"
+    },
+    {
+      "split": "reserve",
+      "id": "bench/translate/59",
+      "pair_key": "ac1e81f0876133146d379607315955aa496af94546f987c22df79e56944f2527",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "7138315b3b8a6c5e49c470234819353d61b4c0d5668413251b749d54e9fbe5fb"
+    },
+    {
+      "split": "reserve",
+      "id": "bench/translate/61",
+      "pair_key": "835a10b5e260fe7e5493c4b465f6152cf0dfd9597dd4cfb0255367fa0ce62f59",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "0c11c02d785880a20b06b0911cb7231ccab078acc7a71cf0e7400c8600d0909b"
+    },
+    {
+      "split": "reserve",
+      "id": "bench/translate/63",
+      "pair_key": "e1388d48f38e7ead8248effc4ba41e331e103af9c6ceb3a2eb71e92673bebb23",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "c2bab409c5c71e96a9ba28c4195451a5bca025f6fa5b31f28ea9d2552a6eff96"
+    },
+    {
+      "split": "reserve",
+      "id": "bench/translate/68",
+      "pair_key": "7dfc6db6e26ae4a42a7efc26ab5f8dc016aaf1bb9cc8826dd4ae5d4634176644",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "0608e32c245e40fb87ce10450dd83e8b5f56ba005887046c736ea1ef7eb535bb"
+    },
+    {
+      "split": "reserve",
+      "id": "bench/translate/72",
+      "pair_key": "c5aaa22bd7a5c31fc348b9d466a06930d20962ac76d85702223c2c57044b7757",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "46a4a11c00170b8c2acf5fdc490e42d02460e099d50c61ab63da7e038f210f2b"
+    },
+    {
+      "split": "reserve",
+      "id": "bench/translate/73",
+      "pair_key": "236c7c8c72b4371c6375c5919b471379bd557f836d3f00a1535d0081130bf741",
+      "decision": "quarantine",
+      "reason": "两段军事行动完全不对应",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "3e47828b4bb1bdc47070fb044d967145ea5f69a2b034531b83328cac627393fb"
+    },
+    {
+      "split": "reserve",
+      "id": "bench/translate/74",
+      "pair_key": "8e203c63018ef38429174cc1a1b6685157034d3d72fb949eb4d4d52a138791fc",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "98aa6683f5234a6b152b8372fb33c9ff4323e25381fcb92254e6b1ac7b06b0b9"
+    },
+    {
+      "split": "reserve",
+      "id": "bench/translate/80",
+      "pair_key": "43b4a2f4e3700f9cb59b31e959c47df1499ed98e4d3b90a3f8ffb9bc19068151",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "1b7a737049d440363755258fb9ad4bb0043e0f80951fc0cbceb55ad918ed32de"
+    },
+    {
+      "split": "reserve",
+      "id": "bench/translate/86",
+      "pair_key": "4620d32f1759c8894b55668a4e89edc93468bb737b708df31517c865778a2b60",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "0a31cdc6740be89e055c6061a2564b23523a601cf4de0d746975e0157b8f13ca"
+    },
+    {
+      "split": "reserve",
+      "id": "bench/translate/87",
+      "pair_key": "f850d19b0b5d76a9eb3a444e12964d106190bc8731af538cbf21389b2ebc67f6",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "02160559608bd6fb26b11187ba59977b2aacfca87e921eddb919a892805ecb86"
+    },
+    {
+      "split": "reserve",
+      "id": "bench/translate/88",
+      "pair_key": "e8e1b977a7dc41dbc07e93992e2efe2774bb42cc784e9118719ee8c882207c32",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "2a6e395e44d0f58f11b8bad5195f0fd7cb7ce42382745c6f991f5e2f71b5ae1d"
+    },
+    {
+      "split": "reserve",
+      "id": "bench/translate/91",
+      "pair_key": "0b51a790b5577046b096ca355b56ce5f21811fa22602ece666fdc0e6b368d842",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "ddf3deda7f13cc980a1b22efafdd2164984c9d7d20b422cef6dacbdbc9932b3f"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_c2m/2",
+      "pair_key": "26a2a0085718903d8be3b7136c821f7b1e3fa9b5fd1fe249c920b9140bf0e3ac",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "b3a8aa4c733c167928c86431b302f70ec3276f55aceb86c794ee1c91dbcb3976"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_c2m/9",
+      "pair_key": "8dfe9719537b74229bc516ebdfaca62b113726a980881cd6824b37b3c8dc50e2",
+      "decision": "quarantine",
+      "reason": "卷数句对应出殡祭奠段，完全错位",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "5d8477c44723623ac2e77ae52c280140d1ca4f8b32ca670673288c986a281225"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_c2m/17",
+      "pair_key": "363055a18c22c97ae90e1eabcdf00ec78652993223e6d2b95e49a3cc807758e8",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "80857c34ded5cb64fa21933aca6b4b79b49cffcf1ba55772bfc16d89ea9b0494"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_c2m/19",
+      "pair_key": "705280f2ae937f2c324a822d7dfb91fffab3851148589f93098e35bcc0fbae2a",
+      "decision": "quarantine",
+      "reason": "七十七/七十一年龄冲突",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "5f995092b9b2231874e58cf43a47a2cfb1a93cb98f165fc36a9c5bd85b81d284"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_c2m/23",
+      "pair_key": "a716cf8f858d715c7a64af418dfe11c19b6ea07ae2f11f21bc97b3dae0a3d15f",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "1bbcd4b92db98115d4790b80dcd4510d08e379b40f74c053a3c8220f815e9f8a"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_c2m/24",
+      "pair_key": "d2d8b41b0457f86385ba3d9ee6a0faef81861125c2ca172803365bae5070e298",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "f8f8347c16b91b86f89b229a5503319bea3630040ed1926e2a2614848a78bbb4"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_c2m/37",
+      "pair_key": "a02bb64bef291867f8c21ecb7608829a75d6af3a7d315535dc91a9e0f7241295",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "a6f96ef7586f0129b4ef1bcf9afbce829d9f45777fa5b753fe23d25bc1732b1d"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_c2m/40",
+      "pair_key": "fae7edee220d77af8d6cc9f2c2b0dd842c4f1b51224731241204a220c9e9e543",
+      "decision": "quarantine",
+      "reason": "参考多出张子阶拘禁前句信息",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "ae3f468d93c990963552f86aab444232d1f3c086215294f8091ce3e83cee59ff"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_c2m/43",
+      "pair_key": "7b09ced057d0cacf2cc71122d33f370f4c2ee7b6ee1a9ffac7acf9876fd6e711",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "df3d6fdbbcf6d4c2c0232c890d93e0ca96e55891df920dab98452c93e636273b"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_c2m/46",
+      "pair_key": "ae9ba240efeb54040813a94574aa602973717170b5b4c74d43c77439790b7dfa",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "41f718f10dfcbb69fdf0c9afa82a4803525332f258bf489f98f8f3b3fee3e7bf"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_c2m/48",
+      "pair_key": "6d298c4a555e1e9606f7a58eb5423e0c4729f9d20d27aa36c89ef23d09041104",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "e1786c96a4d8a02cc3fa2cbcfdc0faf23329478a3b88e778f45d1c11bb0936cb"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_c2m/56",
+      "pair_key": "0c1fb7e8762c762b05411e641745823483be3072c07b5250e7eab033e876f250",
+      "decision": "quarantine",
+      "reason": "人物籍贯句对应追谥段，完全错位",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "927e729b6bbaf4cf3654b13ee616439f0dd317e1729a7b18eb77f99c70b05200"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_c2m/62",
+      "pair_key": "2d4db3b73b4865a258be348c6639fc3e96d3fae9f986583c8facae21f83e7929",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "ae8a91d5ae4619341ba80288f3fbd9dd407de01c5b43b5aeb3ccc1ac303eba8d"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_c2m/64",
+      "pair_key": "7f060072a2fa3135483f57c21bb95982e2b9249c71f33d4d4b93656a8c979740",
+      "decision": "quarantine",
+      "reason": "参考多出狂妄自大前句",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "82fb89316a234a40fb27d3530d29b91482af7a73d6cf0b6f03d31751ff19acef"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_c2m/67",
+      "pair_key": "2856e5d0ce660233a90e40f82b2edacca6719be6130c6a5f45f096197686f4fb",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "ae439c9fa3b8f61c24e8cf372fe7f285b4f34ba7419c8e05d9b55a023a77ccb7"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_c2m/71",
+      "pair_key": "5fff0fb21f76ce856940ef29c361d56558c783bf85b6a1fd1040c82bef113045",
+      "decision": "quarantine",
+      "reason": "输入包含私用字符且参考增加前段任命背景",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "27ecd8a2a975018b872a1cb05de77448eb2d64a023d5168095eb51e80c5f65bb"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_c2m/74",
+      "pair_key": "c186a6ff59a94f93a74df84d7341481c2b745b68df7a77e5bd95b1e6ea0da4c8",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "d7eeac6780f92ea76b62a696e0206d3b101e1e250c16cd0a56c64e2f8197b650"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_c2m/79",
+      "pair_key": "2d4fb9e1da76724f12bc870ceb28aa0301a939e629cd90d5c2131ba2be5d5fc5",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "1df949cbfd3cf4e613890bae3a08490fe116fc4e020d0d5777cd785e31ca7c7b"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_c2m/81",
+      "pair_key": "91c0add5b9e644026031b2c03315c196140d888713a8d8983564534ada42ce3b",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "e217b3ee75cffd030619b09d20e579ebec1bc51b479e48edb034346b403907c6"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_c2m/82",
+      "pair_key": "e28363ac986cfdad496ecd86cb914a4621f0cd21868b7fc3dc63628b2124413f",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "00a015bf7db1a19b8d6b59b72df2cb160a610816bae33f98b7e713efe51dd48f"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_c2m/85",
+      "pair_key": "d1cde814749f47acc6d08ac2f35ba88479f6dbb3dac55e245e678835c50af095",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "35a8a52e7f542653a367711429240ceacb76954b382676c934d7def24297c34c"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_c2m/86",
+      "pair_key": "d7c9ecde5077febc3d6016592bc1db75325d0920b9f2ac54ec093190fd147e80",
+      "decision": "quarantine",
+      "reason": "输入私用字符导致人名不可恢复",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "0264c9405d5aa986e8ead3310ecf114fb437d02f51dbaf2e7aacf3c9ab044573"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_c2m/87",
+      "pair_key": "e37a85e275c12013d7dd2d202ee5da49b460f3d2e0be0cc2bb081cf4cb977dfa",
+      "decision": "quarantine",
+      "reason": "内臣与朝中大臣术语对应不确定，需上下文复核",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "fa6443a834cd1baf1ea16096eb4ee361bac86189c2b94e3b1e2d0477963ea567"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_c2m/98",
+      "pair_key": "68e43dda5ed57623ddcb44e48e0b9996485ad6804a1ffd0e8eb4e55ee38322a3",
+      "decision": "quarantine",
+      "reason": "彧被译为元，专名信息损坏",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "461612c94957cf19b9a199bdde48266abbc466604340032008d748ddd17a06a6"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_c2m/100",
+      "pair_key": "5dcf2997988381949d6732212a929cafa2d661ab2b25dd983bb9a3fe8725cd0c",
+      "decision": "quarantine",
+      "reason": "诏书/韶书OCR",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "f0cdad3bfaf2acb522d80a932ec7c359dbc3f78e5087f6a83f999d30dfa40560"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_c2m/102",
+      "pair_key": "1f9d60f86abd9d484cc70189c87c2d5ed5c27d34d998cabf62b4243d10462801",
+      "decision": "quarantine",
+      "reason": "变不将慎等源句字形可疑，保守隔离",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "7a9b4c6dcab8b793ff6d33a72aef8f83c52799d0a5b96f6bfc4691d26d1ba10b"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_c2m/104",
+      "pair_key": "142dbd1926e9eb62e05a9e25a7fd4bf67dd31350dca06a4d8602d33b9e4092a2",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "4d605550125d56c3367d6ef15a2b0ba3293a6e0020dae8824a4a9dce82dc54c9"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_c2m/105",
+      "pair_key": "743887677e998a7c61cc79d2c83e9b1d68acab35f81988ec1483c9d9b254b960",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "ea15e6d3110f2d7ea97b541ae6f62c416404ea10953090cbd75159feedf73e53"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_c2m/108",
+      "pair_key": "202d2aa590004fd4f660bf2ca2933fe01bb3580b290979c252894f0621c0f70c",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "cc484ce0fcc97a9b35dbd91546dfa7d39d15dba4cb0636430c126e3b9a6fafca"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_c2m/116",
+      "pair_key": "0f1d01f2af4ee695690b77f0454245cd4956ba5524deed508ed38d42dbe4c55a",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "4bf491fdf026f54230063aefb470d62b3df50884c38d162c5cdb1195e5987130"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_m2c/1",
+      "pair_key": "83d93fa745e73a7e670a5a9d3de2b8d9f970e82784318f7eb46f4ed1b0b186c3",
+      "decision": "quarantine",
+      "reason": "命名回答与授名礼仪过程不对应",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "4a4fbe9709204d43746c36beef8c5eca0fcd80fcf9db268ebf3e089de30cf275"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_m2c/2",
+      "pair_key": "1c2f01e9f18dc76baa59c97e7b8499d98d69833d4a7bff84a83d58d6bc0ae16f",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "53c9fb86d4e500ae126eafc5ecdcea591fa0d3e97fb90b2261bd00cee192f036"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_m2c/5",
+      "pair_key": "983db2347af7372d281efe757c51b348eaac62b6519b0ae85939cfd558ef7a46",
+      "decision": "quarantine",
+      "reason": "输入与输出相同，非有效今译古题",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "bab6d83a7328e760b375be4eb963880367aec2f0f18159f7629ba789de20d620"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_m2c/6",
+      "pair_key": "fc210965baa3ed7241e77391a341a0fbb651ad1a8914d8529bb25049cafc0628",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "ff093f57351932d28c477f755851cb5501e40a98ec0f23df667984981f835d70"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_m2c/8",
+      "pair_key": "c91ab50058a1111b18c8837b6e311982b205309367ce96fb1f81bebea68f375e",
+      "decision": "quarantine",
+      "reason": "南夭/南天OCR",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "fc6b51058ac8292d8942d0d55fc989e897136dbaeff4839375042b8ac2dd3824"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_m2c/9",
+      "pair_key": "a6ecbe66eae3bd9fae2135bfe74831152fb451b5e31a6eb51e5e86a2271a5b40",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "8bdf24a17f9f8e9599d7a078b498c977b84e27efc32fd2fcfa96e12a65108d9c"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_m2c/22",
+      "pair_key": "799517adde07d97b479352bcfe5f92251d1c73cb4ab5de1c842c2f74aa7aa1bf",
+      "decision": "quarantine",
+      "reason": "白虎/驺虞术语映射不明确，需专家核对",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "0e1dd2dc44147cf256a113ca724eb475f20d5f66db9ac31dbd63a254e5b7c81c"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_m2c/30",
+      "pair_key": "6617174fd365afe83be6713e46eb1c1bf75fac91047472a6f7b90e3caec0954b",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "ff42c7b6bcebd677b8d644487e07bb93b8ccf2a20b984db55805c1b829076dd5"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_m2c/34",
+      "pair_key": "3ca65698dd57c6c48ecfb3c4bfc9accaf027afda9bb0745100b3eaee28389e3d",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "d5b0c79e09f2682142bbaa5a47cd1e76f9ec47f1c89467ee75d25a02b295528f"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_m2c/35",
+      "pair_key": "d96bcf24356bd6ee34b2d7c7baa320fdad4a418797e973ef609a26efd09ddc04",
+      "decision": "quarantine",
+      "reason": "溢号OCR且目标多出周道也",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "fcd5fcb505dcbaae9dcdd8f03dfda5823b05fe37e24ad086594124f6612897c9"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_m2c/44",
+      "pair_key": "99c5c5cd28653286230eb0cb8805dd1d846f3ade0e983c1239a4a101645aec9e",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "eec452e281b4ce7949a8efb232d1247a7d863ddcab8865eba98d4148655cf46f"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_m2c/47",
+      "pair_key": "2e11bdda7f3a7dd408f78f3e4e9f0fbb7434bdf6e98660459840f236815b4d63",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "2f9987d4f5319e3799d81ca52c98110adb88d57151d48fbdd9e5f713717b0e14"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_m2c/50",
+      "pair_key": "ca79f79edf7c55280e39b248d92dd0c7f8f57981e41624bb1d8ebbff9c700da8",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "bf6c747dbc604b80098690606f4b560628cb12ea08d50d47237133ee5eed15a8"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_m2c/55",
+      "pair_key": "474bcdc8dc72943c2e45e8bf92e40dba6aebdb1b9f3fb0bb283ae429c936fdaf",
+      "decision": "quarantine",
+      "reason": "目标多出非其寒之谓也，输入未提供",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "198b766b8dd42acf76bbc0d3bac458d290d1e914c09136872dccf7c5aed8bbc1"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_m2c/60",
+      "pair_key": "5961ea45cb1945fda22d3fea058fced0cd7b5295a042395f65ebea441194a214",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "2f2d4d7b061e4dc6fa5fe31eb2c7bdc35496281a4ef49d204b34a5749e3a11be"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_m2c/61",
+      "pair_key": "ab0db6ed5bf871a5817448afd5d1a132c6b69228163f4e91f303e1c06b243351",
+      "decision": "quarantine",
+      "reason": "刘安议论与敬绍作乱完全不对应",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "c71f38e9f29b8e8a9de9862f27ed02fb81228e618c7c0e641807d5b155b096ad"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_m2c/68",
+      "pair_key": "1102c91ee2f403d905eb381513e946bb23c789c9cb6d5d4bdef903bcc44a7573",
+      "decision": "quarantine",
+      "reason": "源彪/文宗映射缺乏题内依据，需别名复核",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "7c6fa266bb04b16cd627ed29560f4ef63495e06613eb85563d25653f99a859bd"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_m2c/78",
+      "pair_key": "449a74a9c9c50f95bb0fe5ecf751b6e7343c290d8154215f4cbfe1cff26a61dc",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "57aac1991af7a6880ce93b9deec90105017240ab7d085f9a5b7ed32a26b7fbf5"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_m2c/79",
+      "pair_key": "99fee69f87a4487f6381e5b525edabeb3fde92a3f2e7438d993168155b3dce95",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "e4df40fccbc0c1d166e464750c07a1955a23a3972024809954e499dd7e68699f"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_m2c/97",
+      "pair_key": "4df5579d5a843e7c276aabb643343879cc3ef4141d58757f69e9304cc900400b",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "ed1c2d18fca7ff41d74972b072425afbc4a5fddb11ddace7dde02a904ea2dc76"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_m2c/99",
+      "pair_key": "636573fbedbde71548c6fcaffbc4a44b3231e88d0ebcc59c1ee26729b77fd455",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "ae710c8def14beddefe8de67206a33da44355fdec185a08ac01275b2063535e3"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_m2c/100",
+      "pair_key": "386b632f55c116f226126ac6165ea038f8dfac7fac6d7fd2aa30041a5946aebc",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "fcacf6aa2dc162de128d9e72e01fb5e9427c75521f1fac69bc517da18046bc39"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_m2c/102",
+      "pair_key": "0720949aab469a7efba48afb9383c05913880b45c0584ecd42caeed6cc1789c8",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "9039aabae9b0dc286c52c818c5e014881f5c4ee1a79312a6b9e9f270bda7a4cc"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_m2c/106",
+      "pair_key": "a556437314326ab960dd870dae9ddcd4d49537851e5a74c1a7d56e604d058cb3",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "acc8e11e8e4383aa188216b0fca764333d82d044c917a36828a48e5701847893"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_m2c/109",
+      "pair_key": "2dff304f673003a6aed1eebe70daf3ca9f59dac22bfc0d886c7ca8876f8f1b58",
+      "decision": "quarantine",
+      "reason": "二王/二叔角色依赖上下文，保守隔离",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "f639387deede9ec6bb3e5dc31a9876d6d8a0475e432e754251fbcf8ff49deb41"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_m2c/111",
+      "pair_key": "bddfd18175f2845fdca754e9c0031759080710c7a36dcfebd998999bb02bed08",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "00b87a5c3b8754f12edbbee582549aed5f8edb7afd57f6234ff5572015a5fe60"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_m2c/115",
+      "pair_key": "779df0b73a36bd8b614835c454709b4f803dc57735a0c197dedc77f59caf60af",
+      "decision": "quarantine",
+      "reason": "宣业/定州地点冲突",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "91b4ac08f7a028bcf6bb3e04b8caac131a9d8dd1785d2ae2768fa5b597f4044d"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_m2c/116",
+      "pair_key": "61c2b771ea560e4b0437dc2541d8e815b63c8f13b62fcc03562ed46deef4ab35",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "4f618f4f0b9603b74de025777a6c31cd2e428b3fe487521294d3757cbca90993"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_m2c/118",
+      "pair_key": "08f6084e9d7fa7155d47cae289d541892f77da89e6ba317f8a3d2de994204787",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "5aaac749944a8298055c84b0b004afdcc21de284afc5338262d22b2d76739ba4"
+    },
+    {
+      "split": "reserve",
+      "id": "ood/translate_m2c/119",
+      "pair_key": "7342a884d3f6a23643e1b8649b6277c97a7133c4cf28ef046a4991aca5fbdf7b",
+      "decision": "no_obvious_conflict",
+      "reason": "Text-only review: no obvious content/OCR conflict; not expert verification",
+      "reviewer": "assistant_text_review",
+      "content_sha256": "13edfdcc950127498d4d1db5a5eb680af4360d79951a60bfa2066ab0ef9aca54"
+    }
+  ]
+}

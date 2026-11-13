@@ -1,0 +1,44 @@
+{
+  "target": "full authenticated local gateway, not direct engine",
+  "model": "clean_2k_seed24",
+  "health": {
+    "status": "ready",
+    "model": "clean_2k_seed24",
+    "scope": "local single-worker inference",
+    "backend": "llama.cpp clean-q8_0; reader punctuation constrained",
+    "reader_task_timeout_seconds": 300.0
+  },
+  "complete": true,
+  "requested_levels": [
+    1,
+    2
+  ],
+  "requests_per_level": 30,
+  "levels": [
+    {
+      "concurrency": 1,
+      "requests": 30,
+      "successful": 30,
+      "errors": 0,
+      "wall_seconds": 11.664391299998897,
+      "rps": 2.571930178645742,
+      "ttft_p50_ms": 61.47690000034345,
+      "ttft_p95_ms": 65.49040000027162,
+      "total_p95_ms": 515.3607000011107,
+      "actual_output_tokens": 492
+    },
+    {
+      "concurrency": 2,
+      "requests": 30,
+      "successful": 30,
+      "errors": 0,
+      "wall_seconds": 10.82044169999972,
+      "rps": 2.7725300714850465,
+      "ttft_p50_ms": 371.1973000008584,
+      "ttft_p95_ms": 533.2184999988385,
+      "total_p95_ms": 845.5993999996281,
+      "actual_output_tokens": 492
+    }
+  ],
+  "workload": "4 repeated short prompts, warmed model, output limit 128, low sample count; not production traffic or pure decoder throughput"
+}

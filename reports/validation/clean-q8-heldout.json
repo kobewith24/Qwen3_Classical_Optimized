@@ -1,0 +1,73 @@
+{
+  "model": "clean_2k_seed24",
+  "fingerprints": {
+    "free": "086a019662658187818a8e0a43a1d9bd2cd2c3bbb8a4f237e9c97a44867a6091",
+    "constrained": "5414d57fcd6405d934692181bfe2669587132d838801a9519b1fbdee43907b58"
+  },
+  "models": {
+    "free": {
+      "n": 40,
+      "successful": 40,
+      "errors": 0,
+      "score": 0.7500745296910937,
+      "body_preservation_rate": 0.875,
+      "mean_body_character_error_rate": 0.0017432943270993297,
+      "boundary_f1": 0.8598704554634345,
+      "typed_f1": 0.6115280182417109,
+      "length_truncated": 0,
+      "all_sample_strict_f1": 0.7500745296910937,
+      "completed_rate": 1.0,
+      "all_sample_body_preservation": 0.875
+    },
+    "constrained": {
+      "n": 40,
+      "successful": 40,
+      "errors": 0,
+      "score": 0.8692922527544757,
+      "body_preservation_rate": 1.0,
+      "mean_body_character_error_rate": 0.0,
+      "boundary_f1": 0.8692922527544757,
+      "typed_f1": 0.7202101637906656,
+      "length_truncated": 0,
+      "all_sample_strict_f1": 0.8692922527544757,
+      "completed_rate": 1.0,
+      "all_sample_body_preservation": 1.0
+    }
+  },
+  "complete": true,
+  "development_gate_passed": true,
+  "paired_strict_f1": {
+    "n": 40,
+    "mean_delta": 0.1192177230633821,
+    "bootstrap_95_ci": [
+      0.025261681687764482,
+      0.21410714903825112
+    ],
+    "unit": "sample within this frozen set; does not measure seed-to-seed training variance"
+  },
+  "protocol_sha256": "9a02cd83e1bf14ccbdc453e6ed018a4eaaa1b57931afb93e558a988056a4bfff",
+  "warning": "incremental unscored-ID validation after development selection; existing public/source corpus, not a new benchmark or pretraining-unseen claim. References structurally checked; no independent expert punctuation certification.",
+  "incremental_holdout": {
+    "bench": {
+      "n": 20,
+      "strict_f1": {
+        "free": 0.6829058630156724,
+        "constrained": 0.8291467681565367
+      },
+      "delta": 0.1462409051408643,
+      "completed_body_rate": 1.0,
+      "passed": true
+    },
+    "ood": {
+      "n": 20,
+      "strict_f1": {
+        "free": 0.8172431963665149,
+        "constrained": 0.9094377373524148
+      },
+      "delta": 0.09219454098589996,
+      "completed_body_rate": 1.0,
+      "passed": true
+    }
+  },
+  "holdout_gate_passed": true
+}

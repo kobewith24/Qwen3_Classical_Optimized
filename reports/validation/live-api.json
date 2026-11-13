@@ -1,0 +1,119 @@
+{
+  "time": "2026-11-13T03:24:44.346145+00:00",
+  "model": "clean_2k_seed24",
+  "health": {
+    "status": "ready",
+    "model": "clean_2k_seed24",
+    "scope": "local single-worker inference",
+    "backend": "llama.cpp clean-q8_0; reader punctuation constrained",
+    "reader_task_timeout_seconds": 300.0
+  },
+  "checks": [
+    {
+      "name": "chat requires authentication",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "wrong token rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "real reader response retains original body",
+      "passed": true,
+      "detail": {
+        "segments": 1,
+        "review_required": 0
+      }
+    },
+    {
+      "name": "reader usage distinguishes cached and generated output",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "real SSE content and DONE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "real SSE reports token IDs, not chunks",
+      "passed": true,
+      "detail": {
+        "usage": {
+          "prompt_tokens": 31,
+          "completion_tokens": 16,
+          "total_tokens": 47
+        },
+        "content_chunks": 15
+      }
+    },
+    {
+      "name": "disconnect stops real worker and recovers capacity",
+      "passed": true,
+      "detail": {
+        "active_before_disconnect": 1,
+        "seconds_to_idle": 0.10390629999983503,
+        "cancelled_before": 0,
+        "cancelled_after": 1,
+        "scope": "worker completion and stop signal; not an independent GPU kernel stop measurement"
+      }
+    },
+    {
+      "name": "progress endpoint requires authentication",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "real progress counts completed segments without exposing text",
+      "passed": true,
+      "detail": {
+        "request_id": "daa56d67834a4a2cb92df668b5fe9f10",
+        "completed_segments": 1,
+        "total_segments": 4,
+        "elapsed_seconds": 3.5,
+        "task_timeout_seconds": 300.0
+      }
+    },
+    {
+      "name": "explicit reader cancellation stops real connected request",
+      "passed": true,
+      "detail": {
+        "response_status": 409,
+        "seconds_to_idle": 0.20365039999978762,
+        "cancelled_before": 1,
+        "cancelled_after": 2
+      }
+    },
+    {
+      "name": "finished progress removed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "direct JSON disconnect stops real reader worker",
+      "passed": true,
+      "detail": {
+        "seconds_to_idle": 0.26290289999997185
+      }
+    },
+    {
+      "name": "reader capacity usable after cancellation",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "mode": "normal",
+  "native_identity": {
+    "variant": "clean-q8_0",
+    "model_sha256": "ead9ab7d90dbcc16c94114f684b2c5c2332f2208300304719c0a39fddfa692d7",
+    "binary_sha256": "04672f0e3d4b919a7304c4cca40ec99fd943d0503611e0ef25d1f3d57be3da26"
+  },
+  "adapter_sha256": "483e4b049c04be3d826fe9cc3653e5c2b0f6bf7c582634f1efb8b00bbc76b87f",
+  "code_sha256": {
+    "api/server.py": "c7d9cc2d59f9297490bf41a4b986cc460feec89210d34a5cdc50559a8adae5fe",
+    "classical/inference.py": "1947ed5fedf3df5bc692b1225c1845071c3f404d9bb1237c34f7b69fc8e41ea6",
+    "scripts/validate_live_api.py": "5f905659898a1312f1517c95207516e9b1de69fdfa6924d69f2d3bfdbc8b347f"
+  }
+}

@@ -1,34 +1,53 @@
-# 环境与缓存
-.venv/
+# Local runtime assets and credentials
+/assets/
+/weights/
+/checkpoints/
+/cache/
+/logs/
+/data/
+/tools/
+/reference/
 __pycache__/
-*.pyc
+*.py[cod]
+.venv/
+.pytest_cache/
 *.log
-
-# 大文件（权重/数据/第三方源码，按 README 复现）
-model/
-weights/
-data/raw/
-data/classical_dataset/
-deploy/llama.cpp/
-train/checkpoints/
-eval/reports/answers_*.json
-
-# 系统
-.DS_Store
-Thumbs.db
-
-# 本地踩坑记录，不推送
-TROUBLESHOOTING.md
-
-
-data/classical_dataset_v2/
-server_bundle/
-server_bundle.zip
-
-# v2 产物：数据与二进制不进仓库
-data/v2/
-deploy/llama-bin/
-*.zip
+*.token
+.env
+.env.*
+!/.env.example
+!/api/.env.example
+*.pem
+*.key
+*.sqlite*
+*.db
+*.db-wal
+*.db-shm
+*.safetensors
 *.gguf
-api/reports/*.csv
-resume_entry_v2.tex
+*.pt
+*.pth
+*.bin
+*.zip
+
+# Personal notes stay on this computer
+/开发问题记录.md
+/面试.md
+
+# Selected evidence is public; full experiment archives stay local
+/reports/*
+!/reports/validation/
+!/reports/gguf-artifacts.json
+/reports/validation/source/
+/reports/validation/previous/
+/reports/validation/source-final.json
+
+# Local provenance and one-off experiment administration
+/scripts/capture_*.py
+/scripts/write_*.py
+/scripts/report_native.py
+/scripts/*20261113.py
+/scripts/verify_original.py
+/scripts/verify_assets.py
+/scripts/trace_quality_issues.py
+/2

@@ -1,0 +1,18 @@
+{
+  "strong_prompt_comparison": {
+    "n": 32,
+    "mean_delta": 0.02038112970350509,
+    "bootstrap_95_ci": [
+      0.00458953589853606,
+      0.03727214657579353
+    ],
+    "unit": "sample within this frozen set; does not measure seed-to-seed training variance"
+  },
+  "runs": {
+    "base-q8-dev": "1b0b5aa8de5141f309392ef8e5f34f49c05ebc3d87699523f50deb021db6647b",
+    "base-q8-two-shot": "150bc2c57bca4fd858056ad6dfbc99bb75115889de5ad59db50dfb3bce2f4a0e",
+    "clean-q8-dev": "095e4c996d95d2d9e18151310a20272c267c369d9f77ebd20fb787ac27f8b342",
+    "clean-q4-dev": "559d9140cc0b801774f55a0cffd00c1ebec700b14b022b467dd4ef66e312089e"
+  },
+  "holdout_sha256": "362dbc31deac531c144cebb2cbc87738d68e998404263785ea0e9374c835022e"
+}
