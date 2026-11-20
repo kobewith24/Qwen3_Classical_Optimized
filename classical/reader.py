@@ -1,9 +1,13 @@
 """Lossless chunk bookkeeping; reject model punctuation that changes the body."""
+import re
 from difflib import SequenceMatcher
 from .core import body
 
 
-def segments(text, width=240):
+SEGMENT_WIDTH = 240
+
+
+def segments(text, width=SEGMENT_WIDTH):
     if not text or not text.strip():raise ValueError('请输入需要处理的原文。')
     if width<1:raise ValueError('Segment width must be positive')
     result=[];start=0
@@ -15,6 +19,43 @@ def segments(text, width=240):
         result.append({'index':len(result),'start':start,'end':end,'original':text[start:end]});start=end
     assert ''.join(x['original'] for x in result)==text
     return result
+
+
+def _append_content(parts, text, start, end):
+    # Leave indentation, trailing spaces and blank lines in the source gaps.
+    while start < end and text[start].isspace():
+        start += 1
+    while end > start and text[end - 1].isspace():
+        end -= 1
+    if start < end:
+        parts.append(dict(index=len(parts), start=start, end=end, original=text[start:end]))
+
+
+def document_segments(task, text):
+    if task == 'punctuate':
+        return segments(text)
+    paragraphs = []
+    for line in re.finditer(r'[^\r\n]+', text):
+        _append_content(paragraphs, text, line.start(), line.end())
+    if not paragraphs:
+        raise ValueError('请输入需要处理的原文。')
+    return paragraphs
+
+
+def translation_pieces(paragraph):
+    """Bound each inference call. Offsets are relative to its visible paragraph."""
+    parts = []
+    start = 0
+    while start < len(paragraph):
+        end = min(start + SEGMENT_WIDTH, len(paragraph))
+        if end < len(paragraph):
+            for index in range(end - 1, start - 1, -1):
+                if paragraph[index] in '。！？；!?;':
+                    end = index + 1
+                    break
+        _append_content(parts, paragraph, start, end)
+        start = end
+    return parts
 
 
 def review(task,original,prediction):

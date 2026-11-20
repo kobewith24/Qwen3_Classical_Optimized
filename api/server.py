@@ -16,8 +16,29 @@ from fastapi.responses import FileResponse,JSONResponse,StreamingResponse
 from pydantic import BaseModel,ConfigDict,Field
 
 from classical.core import ROOT,INSTRUCTIONS,SYSTEM,messages,write_json,digest,file_digest
-from classical.reader import segments,review
-from classical.documents import assemble
+from classical.reader import SEGMENT_WIDTH, document_segments, review, translation_pieces
+from classical.documents import assemble, finished
+
+
+def reuse_result(row):
+    return {**row, 'cache_hit': True, 'generation_usage': row.get('generation_usage', row.get('usage', {})),
+            'usage': {'prompt_tokens': 0, 'completion_tokens': 0}}
+
+
+def translation_result(task, paragraph, slots):
+    original = paragraph['original']
+    pieces = [piece for piece in slots if piece is not None]
+    ready = len(pieces) == len(slots) and all(finished(piece) for piece in pieces)
+    text = assemble(original, pieces)
+    result = {**paragraph, **review(task, original, text), 'cache_hit': False,
+              'finish_reason': 'stop' if ready else 'partial'}
+    for field in ('usage', 'generation_usage'):
+        result[field] = {name: sum(piece[field][name] for piece in pieces)
+                         for name in ('prompt_tokens', 'completion_tokens')}
+    if not ready:
+        result.update(pieces=pieces, candidate=''.join(piece['candidate'] for piece in pieces),
+                      note='本段译文尚未完成。已保存生成进度，点击开始可继续。')
+    return result
 
 
 class Gate:
@@ -228,7 +249,7 @@ def create_app(engine,token,model_name='classical-clean',queue_capacity=4,queue_
     @app.post('/api/process',dependencies=[Depends(auth)])
     async def process(body:ProcessRequest,request:Request):
         if body.task not in INSTRUCTIONS:raise HTTPException(400,'只支持断句、古译今和今译古。')
-        try:parts=segments(body.text)
+        try:parts=document_segments(body.task,body.text)
         except ValueError as e:raise HTTPException(400,str(e))
         request_id=body.request_id or secrets.token_urlsafe(18);prune_cancellations()
         if request_id in jobs:raise HTTPException(409,'该请求正在处理。')
@@ -242,39 +263,66 @@ def create_app(engine,token,model_name='classical-clean',queue_capacity=4,queue_
             async with asyncio.timeout(reader_task_timeout):return await process_parts(body,parts,request,cancel,request_id,document_id)
         except TimeoutError:
             cancel.set();stats['reader_timeouts']+=1
-            raise HTTPException(504,'整篇处理超过时间上限，已停止；原文保留，请分批处理。')
+            raise HTTPException(504,'整篇处理超过时间上限。' + ('已保存进度，点击开始可继续。' if store else '请分批处理。'))
         finally:
             jobs.pop(request_id,None);progress.pop(request_id,None)
             if document_id:leases.discard(document_id)
 
+    async def generate_part(task, part, request, cancel):
+        original = part['original']
+        if not original.strip():
+            return {**part, 'candidate': original, 'accepted': False, 'body_preserved': True,
+                    'text': original, 'status': 'unchanged', 'note': '空白段已保留。'}
+        item = {'task': task, 'input': original, 'instruction': INSTRUCTIONS[task]}
+        out = await await_result(messages(item), 512 if task == 'punctuate' else 384, request, cancel, reader_item=item)
+        prediction = out['text'] if task == 'punctuate' else out['text'].strip()
+        checked = review(task, original, prediction)
+        reason = out['finish_reason']
+        if reason == 'length':
+            checked.update(status='review_required', accepted=False, note='达到输出上限，候选可能不完整，请人工复核。')
+            if task == 'punctuate':
+                checked['text'] = original
+        elif task != 'punctuate' and not prediction:
+            reason = 'empty'
+            checked['note'] = '模型未返回译文，点击开始可重试。'
+        usage = {name: out[name] for name in ('prompt_tokens', 'completion_tokens')}
+        return {**part, **checked, 'usage': usage, 'generation_usage': usage,
+                'cache_hit': False, 'finish_reason': reason, 'constraint': out.get('constraint')}
+
+    async def translate_long(task, paragraph, saved, request, cancel, document_id):
+        parts = translation_pieces(paragraph['original'])
+        pieces = [None] * len(parts)
+        for piece in saved.get('pieces', []):
+            pieces[piece['index']] = reuse_result(piece)
+        pending = [i for i, piece in enumerate(pieces) if piece is None or not finished(piece)]
+        for index in pending:
+            pieces[index] = await generate_part(task, parts[index], request, cancel)
+            if document_id and index != pending[-1]:
+                store.save_generated(document_id, translation_result(task, paragraph, pieces))
+        return translation_result(task, paragraph, pieces)
+
     async def process_parts(body,parts,request,cancel,request_id,document_id):
-        rows=[];cached={r['index']:r for r in store.load(document_id)['segments'] if r.get('finish_reason','stop')=='stop' or r['status']=='user_confirmed'} if document_id else {}
+        rows = []
+        cached = {r['index']: r for r in store.load(document_id)['segments']} if document_id else {}
         for part in parts:
             if cancel.is_set():raise HTTPException(409,'处理已停止，原文保留。')
-            if part['index'] in cached:
-                saved=cached[part['index']]
-                rows.append({**saved,'cache_hit':True,'generation_usage':saved.get('generation_usage',saved.get('usage',{})),
-                             'usage':{'prompt_tokens':0,'completion_tokens':0}});stats['reader_cache_hits']+=1
-                progress[request_id]['completed']=len(rows);continue
-            if not part['original'].strip():
-                rows.append({**part,'candidate':part['original'],'accepted':False,'body_preserved':True,
-                             'text':part['original'],'status':'unchanged','note':'空白段已保留。'})
-                if document_id:rows[-1]=store.save_generated(document_id,rows[-1])
-                progress[request_id]['completed']=len(rows);continue
-            item={'task':body.task,'input':part['original'],'instruction':INSTRUCTIONS[body.task]}
-            out=await await_result(messages(item),512 if body.task=='punctuate' else 384,request,cancel,reader_item=item)
-            checked=review(body.task,part['original'],out['text'])
-            if out['finish_reason']=='length':
-                checked.update(status='review_required',accepted=False,note='达到输出上限，候选可能不完整，请人工复核。')
-                if body.task=='punctuate':checked['text']=part['original']
-            rows.append({**part,**checked,'usage':{'prompt_tokens':out['prompt_tokens'],'completion_tokens':out['completion_tokens']},
-                         'generation_usage':{'prompt_tokens':out['prompt_tokens'],'completion_tokens':out['completion_tokens']},
-                         'cache_hit':False,'finish_reason':out['finish_reason'],'constraint':out.get('constraint')})
-            if document_id:rows[-1]=store.save_generated(document_id,rows[-1])
-            progress[request_id]['completed']=len(rows)
+            saved = cached.get(part['index'], {})
+            if saved and finished(saved):
+                row = reuse_result(saved)
+                stats['reader_cache_hits'] += 1
+            else:
+                if body.task != 'punctuate' and len(part['original']) > SEGMENT_WIDTH:
+                    row = await translate_long(body.task, part, saved, request, cancel, document_id)
+                else:
+                    row = await generate_part(body.task, part, request, cancel)
+                if document_id:
+                    row = store.save_generated(document_id, row)
+            rows.append(row)
+            progress[request_id]['completed'] += int(finished(row))
+        completed = sum(finished(r) for r in rows)
         return {'task':body.task,'original':body.text,'segments':rows,'text':assemble(body.text,rows),
-                'document_id':document_id,'complete':all(r.get('finish_reason','stop')=='stop' or r['status']=='user_confirmed' for r in rows),
-                'completed_segments':sum(r.get('finish_reason','stop')=='stop' or r['status']=='user_confirmed' for r in rows),'total_segments':len(parts),
+                'document_id':document_id,'complete':completed==len(parts),
+                'completed_segments':completed,'total_segments':len(parts),
                 'review_required':sum(x['status']=='review_required' for x in rows),'model':model_name,'request_id':request_id}
 
     @app.post('/v1/chat/completions',dependencies=[Depends(auth)])

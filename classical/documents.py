@@ -4,7 +4,7 @@ import sqlite3
 import time
 from contextlib import closing
 from .core import body,digest
-from .reader import segments
+from .reader import SEGMENT_WIDTH, document_segments
 
 
 def assemble(original,rows):
@@ -12,6 +12,10 @@ def assemble(original,rows):
     for row in sorted(rows,key=lambda r:r['start']):
         chunks.extend([original[offset:row['start']],row['text']]);offset=row['end']
     return ''.join(chunks)+original[offset:]
+
+
+def finished(row):
+    return row['status'] == 'user_confirmed' or row.get('finish_reason', 'stop') == 'stop'
 
 
 class DocumentStore:
@@ -27,7 +31,11 @@ class DocumentStore:
         db=sqlite3.connect(self.path,timeout=5);db.execute('PRAGMA foreign_keys=ON');return db
 
     def prepare(self,task,text,signature,model):
-        parts=segments(text);key=digest({'task':task,'original':text,'signature':signature,'width':240})
+        parts = document_segments(task, text)
+        identity = {'task': task, 'original': text, 'signature': signature, 'width': SEGMENT_WIDTH}
+        if task != 'punctuate':
+            identity['translation_layout'] = 'physical-paragraphs'
+        key = digest(identity)
         with closing(self.connect()) as db,db:
             db.execute('INSERT OR IGNORE INTO documents VALUES(?,?,?,?,?,?)',(key,task,text,model,len(parts),time.time()))
         return key
@@ -39,7 +47,7 @@ class DocumentStore:
             rows=[{**json.loads(value),'revision':revision} for value,revision in db.execute(
                 'SELECT result,revision FROM chunks WHERE document=? ORDER BY idx',(key,))]
         task,original,model,total=row
-        completed=sum(r.get('finish_reason','stop')=='stop' or r['status']=='user_confirmed' for r in rows)
+        completed=sum(finished(r) for r in rows)
         return {'document_id':key,'task':task,'original':original,'model':model,'segments':rows,
                 'completed_segments':completed,'total_segments':total,'complete':completed==total,
                 'review_required':sum(r['status']=='review_required' for r in rows),'text':assemble(original,rows)}
